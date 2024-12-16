@@ -2,8 +2,6 @@
 
 import AboutUs from "../components/AboutUs";
 import HeroSection from "../components/HeroSection";
-import OurPrograms from "../components/OurPrograms";
-
 // import About from "@/components/About";
 // import Vision from "@/components/Vision";
 // import Programs from "@/components/Programs";
@@ -16,7 +14,7 @@ export default function Home() {
       <HeroSection />
       <AboutUs />
       {/* <Vision /> */}
-      <OurPrograms />
+      <Programs />
       <Journey />
       <CTA />
     </main>
@@ -101,36 +99,36 @@ export default function Home() {
 // };
 
 // components/Vision.tsx
-// const Vision = () => {
-//   return (
-//     <section className="py-20">
-//       <div className="container mx-auto px-4">
-//         <div className="grid md:grid-cols-2 gap-12">
-//           <div className="bg-white p-8 rounded-xl shadow-md">
-//             <h3 className="text-2xl font-bold mb-4 text-blue-600">
-//               Our Vision
-//             </h3>
-//             <p className="text-gray-700">
-//               We expand the ideas and energy for helping the people so that with
-//               assistance of my family, and with the support of my friends we are
-//               able to make a better use of our resources.
-//             </p>
-//           </div>
-//           <div className="bg-white p-8 rounded-xl shadow-md">
-//             <h3 className="text-2xl font-bold mb-4 text-purple-600">
-//               Our Mission
-//             </h3>
-//             <p className="text-gray-700">
-//               We will be committed to be the most effective and approachable for
-//               people/children through the improvement of the care given to them
-//               and the quality of their lives.
-//             </p>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
+const Vision = () => {
+  return (
+    <section className="py-20">
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-2 gap-12">
+          <div className="bg-white p-8 rounded-xl shadow-md">
+            <h3 className="text-2xl font-bold mb-4 text-blue-600">
+              Our Vision
+            </h3>
+            <p className="text-gray-700">
+              We expand the ideas and energy for helping the people so that with
+              assistance of my family, and with the support of my friends we are
+              able to make a better use of our resources.
+            </p>
+          </div>
+          <div className="bg-white p-8 rounded-xl shadow-md">
+            <h3 className="text-2xl font-bold mb-4 text-purple-600">
+              Our Mission
+            </h3>
+            <p className="text-gray-700">
+              We will be committed to be the most effective and approachable for
+              people/children through the improvement of the care given to them
+              and the quality of their lives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 // components/Programs.tsx
 const Programs = () => {

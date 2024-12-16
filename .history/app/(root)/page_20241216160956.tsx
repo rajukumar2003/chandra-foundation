@@ -2,7 +2,7 @@
 
 import AboutUs from "../components/AboutUs";
 import HeroSection from "../components/HeroSection";
-import OurPrograms from "../components/OurPrograms";
+import O from "../components/HeroSection";
 
 // import About from "@/components/About";
 // import Vision from "@/components/Vision";

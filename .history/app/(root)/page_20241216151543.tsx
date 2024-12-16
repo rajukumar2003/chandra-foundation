@@ -2,8 +2,6 @@
 
 import AboutUs from "../components/AboutUs";
 import HeroSection from "../components/HeroSection";
-import OurPrograms from "../components/OurPrograms";
-
 // import About from "@/components/About";
 // import Vision from "@/components/Vision";
 // import Programs from "@/components/Programs";
@@ -15,8 +13,8 @@ export default function Home() {
     <main className="overflow-hidden">
       <HeroSection />
       <AboutUs />
-      {/* <Vision /> */}
-      <OurPrograms />
+      <Vision />
+      <Programs />
       <Journey />
       <CTA />
     </main>
@@ -67,70 +65,70 @@ export default function Home() {
 // };
 
 // components/About.tsx
-// const About = () => {
-//   return (
-//     <section className="py-20 bg-gray-50">
-//       <div className="container mx-auto px-4">
-//         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-//           About Chandra & Foundation
-//         </h2>
-//         <div className="max-w-4xl mx-auto text-lg text-gray-700 space-y-6">
-//           <p>
-//             We are proud to have a dream of helping the needy persons. As we all
-//             know, in India, many of the population are living in poverty.
-//             Statistics show that millions of children are uneducated and living
-//             in hunger, poor health, as well as the number of children living
-//             without a parent is increasing day by day.
-//           </p>
-//           <p className="font-semibold text-xl text-center">
-//             Who would care for them if we don't start with ourselves?
-//           </p>
-//           <p>
-//             This charity foundation started informally in July 2019 but was
-//             registered in January 2020. From 2019, we tried to spend more time
-//             with the people/children and understand their wishes and aspirations
-//             in life. We requested people to donate their old clothes and
-//             accessories. But that would not have been enough. Education and
-//             Employment is the epicenter of development apart from one's basic
-//             needs.
-//           </p>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
+const About = () => {
+  return (
+    <section className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          About Chandra & Foundation
+        </h2>
+        <div className="max-w-4xl mx-auto text-lg text-gray-700 space-y-6">
+          <p>
+            We are proud to have a dream of helping the needy persons. As we all
+            know, in India, many of the population are living in poverty.
+            Statistics show that millions of children are uneducated and living
+            in hunger, poor health, as well as the number of children living
+            without a parent is increasing day by day.
+          </p>
+          <p className="font-semibold text-xl text-center">
+            Who would care for them if we don't start with ourselves?
+          </p>
+          <p>
+            This charity foundation started informally in July 2019 but was
+            registered in January 2020. From 2019, we tried to spend more time
+            with the people/children and understand their wishes and aspirations
+            in life. We requested people to donate their old clothes and
+            accessories. But that would not have been enough. Education and
+            Employment is the epicenter of development apart from one's basic
+            needs.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 // components/Vision.tsx
-// const Vision = () => {
-//   return (
-//     <section className="py-20">
-//       <div className="container mx-auto px-4">
-//         <div className="grid md:grid-cols-2 gap-12">
-//           <div className="bg-white p-8 rounded-xl shadow-md">
-//             <h3 className="text-2xl font-bold mb-4 text-blue-600">
-//               Our Vision
-//             </h3>
-//             <p className="text-gray-700">
-//               We expand the ideas and energy for helping the people so that with
-//               assistance of my family, and with the support of my friends we are
-//               able to make a better use of our resources.
-//             </p>
-//           </div>
-//           <div className="bg-white p-8 rounded-xl shadow-md">
-//             <h3 className="text-2xl font-bold mb-4 text-purple-600">
-//               Our Mission
-//             </h3>
-//             <p className="text-gray-700">
-//               We will be committed to be the most effective and approachable for
-//               people/children through the improvement of the care given to them
-//               and the quality of their lives.
-//             </p>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
+const Vision = () => {
+  return (
+    <section className="py-20">
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-2 gap-12">
+          <div className="bg-white p-8 rounded-xl shadow-md">
+            <h3 className="text-2xl font-bold mb-4 text-blue-600">
+              Our Vision
+            </h3>
+            <p className="text-gray-700">
+              We expand the ideas and energy for helping the people so that with
+              assistance of my family, and with the support of my friends we are
+              able to make a better use of our resources.
+            </p>
+          </div>
+          <div className="bg-white p-8 rounded-xl shadow-md">
+            <h3 className="text-2xl font-bold mb-4 text-purple-600">
+              Our Mission
+            </h3>
+            <p className="text-gray-700">
+              We will be committed to be the most effective and approachable for
+              people/children through the improvement of the care given to them
+              and the quality of their lives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 // components/Programs.tsx
 const Programs = () => {

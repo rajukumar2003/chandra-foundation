@@ -2,8 +2,6 @@
 
 import AboutUs from "../components/AboutUs";
 import HeroSection from "../components/HeroSection";
-import OurPrograms from "../components/OurPrograms";
-
 // import About from "@/components/About";
 // import Vision from "@/components/Vision";
 // import Programs from "@/components/Programs";

@@ -21,7 +21,6 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <HeroSection />
-      <WhyCare/>
       <AboutUs />
       <OurPrograms />
       <ImpactSection />
@@ -29,6 +28,7 @@ export default function Home() {
       <StorySection/>
       <FoundersMessage/>
       <CtaSection/>
+      <WhyCare/>
     </main>
   );
 }

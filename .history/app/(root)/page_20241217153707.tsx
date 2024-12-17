@@ -7,8 +7,7 @@ import ImpactSection from "../components/ImpactSection"
 import StorySection from "../components/StorySection";
 import FoundersMessage from "../components/FoundersMessage";
 import HistoryTimeline from "../components/HistoryTimeline";
-import CtaSection from "../components/CtaSection";
-import WhyCare from "../components/WhyCare";
+import CTASection from "../components/CtaSection";
 
 
 // import About from "@/components/About";
@@ -21,14 +20,14 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <HeroSection />
-      <WhyCare/>
       <AboutUs />
       <OurPrograms />
       <ImpactSection />
       <HistoryTimeline/>
       <StorySection/>
       <FoundersMessage/>
-      <CtaSection/>
+      <CTASection/>
+      <CTA />
     </main>
   );
 }
@@ -242,28 +241,28 @@ export default function Home() {
 // };
 
 // components/CTA.tsx
-// const CTA = () => {
-//   return (
-//     <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
-//       <div className="container mx-auto px-4 text-center">
-//         <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
-//           Join Us in Making a Difference
-//         </h2>
-//         <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
-//           From the desk of our founder: With assistance from my family, and with
-//           the support of my friends, we will be able to make better use of our
-//           resources. We are a startup foundation, learning to improve and serve
-//           better. We welcome your support and ideas.
-//         </p>
-//         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-//           <button className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-//             Donate Now
-//           </button>
-//           <button className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-colors">
-//             Volunteer
-//           </button>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
+const CTA = () => {
+  return (
+    <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+      <div className="container mx-auto px-4 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+          Join Us in Making a Difference
+        </h2>
+        <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
+          From the desk of our founder: With assistance from my family, and with
+          the support of my friends, we will be able to make better use of our
+          resources. We are a startup foundation, learning to improve and serve
+          better. We welcome your support and ideas.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+            Donate Now
+          </button>
+          <button className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-colors">
+            Volunteer
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};

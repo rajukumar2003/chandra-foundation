@@ -1,22 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import {
-  Mail,
-  Phone,
-  Facebook,
-  Twitter,
-  Instagram,
-  Youtube,
-} from "lucide-react";
+// import {
+//   Facebook,
+//   Twitter,
+//   Instagram,
+//   Youtube,
+// } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+// import {
+//   DropdownMenu,
+//   DropdownMenuContent,
+//   DropdownMenuItem,
+//   DropdownMenuTrigger,
+// } from "@/components/ui/dropdown-menu";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -136,6 +134,7 @@ export default function Navbar() {
 
             {/* Mobile Menu Button */}
             <button
+              title="Toggle Menu"
               className="lg:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >

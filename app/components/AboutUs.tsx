@@ -41,7 +41,7 @@ export default function AboutUs() {
 
             {/* Quote */}
             <blockquote className="relative pl-4 border-l-4 border-green-500 italic text-gray-700 text-xl">
-              "Who would care for them if we doesn't start from with ourselves?"
+              &quot;Who would care for them if we doesn&apos;t start from with ourselves?&quot;
               <div className="w-2 h-2 bg-green-500 absolute -left-[5px] -top-2 rounded-full"></div>
               <div className="w-2 h-2 bg-green-500 absolute -left-[5px] -bottom-2 rounded-full"></div>
             </blockquote>

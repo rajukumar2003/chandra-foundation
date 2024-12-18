@@ -40,12 +40,12 @@ export default function CtaSection() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="mt-12 text-xl text-gray-600 italic"
               >
-                "The greatest gift you can give someone is your{" "}
+                &quot;The greatest gift you can give someone is your{" "}
                 <span className="text-green-600 font-semibold">time</span>, your{" "}
                 <span className="text-green-600 font-semibold">love</span>, your{" "}
                 <span className="text-green-600 font-semibold">attention</span>,
                 and your{" "}
-                <span className="text-green-600 font-semibold">concern</span>."
+                <span className="text-green-600 font-semibold">concern</span>.&quot;
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, x: -20 }}

@@ -78,7 +78,7 @@ export default function ContactPage() {
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Feel free to reach out to us for any inquiries, suggestions, or support. 
-            We&apos;re here to help and appreciate your involvement in our mission.
+            We're here to help and appreciate your involvement in our mission.
           </p>
         </motion.div>
 

@@ -63,13 +63,13 @@ export default function FoundersMessage() {
                 serve better. We are welcoming your support and ideas.
               </p>
               <blockquote className="border-l-4 border-green-500 pl-4 my-6 italic text-gray-700">
-                "If you have the will and the same dreams then come and join us because any contribution 
-                is very much valuable."
+                &quot;If you have the will and the same dreams then come and join us because any contribution 
+                is very much valuable.&quot;
               </blockquote>
               <p className="text-gray-600 leading-relaxed">
                 Our journey began with a simple yet powerful vision: to create meaningful change in our 
                 community. Today, with the dedication of our team and the generosity of our supporters, 
-                we're making that vision a reality, one life at a time.
+                we&apos;re making that vision a reality, one life at a time.
               </p>
               <div className="pt-6">
                 {/* <Button 

@@ -63,8 +63,8 @@ export default function ImpactSection() {
             Our Impact in Numbers
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Through your generous support and our dedicated team's efforts, 
-            we've made significant strides in transforming lives and building 
+            Through your generous support and our dedicated team&apos;s efforts, 
+            we&apos;ve made significant strides in transforming lives and building 
             a better future for our community.
           </p>
         </motion.div>

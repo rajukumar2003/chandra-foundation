@@ -9,12 +9,12 @@ import Link from "next/link";
 // } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+// import {
+//   DropdownMenu,
+//   DropdownMenuContent,
+//   DropdownMenuItem,
+//   DropdownMenuTrigger,
+// } from "@/components/ui/dropdown-menu";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -53,7 +53,7 @@ export default function Navbar() {
                   Home
                 </Link>
                 <Link
-                  href="/aboutUs"
+                  href="/aboutus"
                   className="text-green-900 hover:text-green-700"
                 >
                   About Us
@@ -65,7 +65,7 @@ export default function Navbar() {
                   Our Work
                 </Link>
                 <Link
-                  href="/contactUs"
+                  href="/contact-us"
                   className="text-green-900 hover:text-green-700"
                 >
                   Contact Us

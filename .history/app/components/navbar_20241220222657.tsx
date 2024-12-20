@@ -1,12 +1,15 @@
 "use client";
 
 import Link from "next/link";
+<<<<<<< HEAD
+=======
 // import {
 //   Facebook,
 //   Twitter,
 //   Instagram,
 //   Youtube,
 // } from "lucide-react";
+>>>>>>> 6ece36a1e3124963873322c44cda15fd80005491
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
@@ -53,7 +56,7 @@ export default function Navbar() {
                   Home
                 </Link>
                 <Link
-                  href="/aboutUs"
+                  href="/aboutus"
                   className="text-green-900 hover:text-green-700"
                 >
                   About Us
@@ -65,7 +68,7 @@ export default function Navbar() {
                   Our Work
                 </Link>
                 <Link
-                  href="/contactUs"
+                  href="/contact-us"
                   className="text-green-900 hover:text-green-700"
                 >
                   Contact Us

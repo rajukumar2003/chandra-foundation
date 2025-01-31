@@ -55,7 +55,7 @@ const timelineEvents = [
   },
   {
     year: 2025,
-    title: "",
+    title: "Dedication To",
     description: "Grand inauguration of Chandra Foundation headquarters",
     stats: ["Nationwide recognition", "Pan-India presence", "Strategic partnerships established"],
     icon: Trophy,

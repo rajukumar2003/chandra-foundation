@@ -50,7 +50,7 @@ export default function FoundersMessage() {
               </div>
               <div className="mt-4 text-center">
                 <h3 className="text-xl font-semibold text-green-800">From Founder's Desk</h3>
-                {/* <p className="text-gray-600">Founder</p> */}
+                <p className="text-gray-600">Founder</p>
               </div>
             </div>
 

@@ -5,114 +5,119 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {
-  Utensils,
-  Sprout,
-  TruckIcon,
-  BookOpen,
-  Recycle,
-  Store,
-  Users,
-  CheckCircle2,
-  Clock,
-  HeartHandshake,
   Briefcase,
+  GraduationCap,
+  Users,
+  Lightbulb,
+  Handshake,
   IndianRupee,
   BarChart,
   FileText,
   LineChart,
+  CheckCircle2,
+  Clock,
 } from "lucide-react"
 import Image from "next/image"
 
 const objectives = [
   {
-    title: "Eradicate Hunger and Malnutrition",
-    description: "Ensure access to nutritious food for communities facing food insecurity.",
-    icon: Utensils,
-  },
-  {
-    title: "Promote Sustainable Agriculture",
-    description: "Support small-scale farmers and encourage sustainable farming practices to increase food production.",
-    icon: Sprout,
-  },
-  {
-    title: "Enhance Food Distribution Systems",
+    title: "Skill Development",
     description:
-      "Strengthen food distribution networks to ensure that food reaches the most vulnerable populations in a timely manner.",
-    icon: TruckIcon,
+      "Provide skill-building programs in key sectors such as manufacturing, IT, healthcare, and entrepreneurship.",
+    icon: GraduationCap,
   },
   {
-    title: "Raise Awareness on Nutrition",
+    title: "Youth Empowerment",
     description:
-      "Educate communities about the importance of balanced diets, healthy eating habits, and food preservation.",
-    icon: BookOpen,
+      "Equip young people with the skills needed to enter the workforce or become self-employed.",
+    icon: Users,
   },
   {
-    title: "Reduce Food Waste",
-    description: "Implement initiatives to reduce food loss and waste at the community level and among food suppliers.",
-    icon: Recycle,
-  },
-  {
-    title: "Support Local Food Systems",
+    title: "Women’s Economic Empowerment",
     description:
-      "Empower local communities by promoting local food systems and connecting farmers directly to markets.",
-    icon: Store,
+      "Create equal opportunities for women to acquire skills for better employment or entrepreneurship.",
+    icon: Lightbulb,
+  },
+  {
+    title: "Job Placement and Linkages",
+    description:
+      "Establish connections with local businesses and industries to facilitate job placements.",
+    icon: Handshake,
+  },
+  {
+    title: "Entrepreneurship Promotion",
+    description:
+      "Support aspiring entrepreneurs with training, microfinancing, and mentorship programs.",
+    icon: Briefcase,
+  },
+  {
+    title: "Community Engagement",
+    description:
+      "Engage local communities to identify key skills required in their regions and sectors.",
+    icon: Users,
   },
 ]
 
 const timeline = [
   {
-    phase: "Phase 1: Needs Assessment & Planning",
+    phase: "Phase 1: Program Design and Preparation",
     duration: "2 months",
-    details: "Identify target communities, assess food security needs, and set up partnerships.",
+    details:
+      "Develop training curriculum, recruit trainers, and set up partnerships with local businesses and organizations.",
   },
   {
-    phase: "Phase 2: Implementation",
-    duration: "12 months",
-    details: "Begin food distribution, agricultural training, nutrition education, and food waste reduction programs.",
-  },
-  {
-    phase: "Phase 3: Monitoring & Evaluation",
+    phase: "Phase 2: Skill Training and Workshops",
     duration: "6 months",
-    details: "Track the progress of food distribution and agriculture programs, gather feedback.",
+    details: "Implement skill development programs and entrepreneurship workshops.",
   },
   {
-    phase: "Phase 4: Expansion & Sustainability",
-    duration: "6 months",
-    details: "Expand the program to additional communities and ensure sustainability by involving local stakeholders.",
+    phase: "Phase 3: Job Placement and Mentorship",
+    duration: "3 months",
+    details: "Facilitate job placements, offer career services, and provide mentorship for entrepreneurs.",
+  },
+  {
+    phase: "Phase 4: Monitoring and Evaluation",
+    duration: "Ongoing",
+    details: "Track participants’ progress and provide ongoing support, making adjustments as needed.",
+  },
+  {
+    phase: "Phase 5: Community Outreach and Expansion",
+    duration: "Ongoing",
+    details: "Expand the program to more communities based on the success of the initial phases.",
   },
 ]
 
 const outcomes = [
   {
-    metric: "5,000+",
-    label: "Food Aid Recipients",
-    description: "Vulnerable individuals and families provided with direct food aid",
+    metric: "1,000+",
+    label: "Individuals Trained",
+    description: "In high-demand sectors such as IT, healthcare, and hospitality.",
   },
   {
     metric: "500+",
-    label: "Trained Farmers",
-    description: "Small-scale farmers trained on sustainable agricultural techniques",
+    label: "Job Placements",
+    description: "Individuals successfully placed in full-time employment or internships.",
   },
   {
-    metric: "10,000+",
-    label: "Nutrition Education",
-    description: "Individuals educated on healthy eating practices and proper food storage",
+    metric: "100+",
+    label: "New Businesses",
+    description: "Established, creating jobs and contributing to local economic growth.",
   },
   {
-    metric: "10 tons",
-    label: "Food Rescued",
-    description: "Excess food rescued and redistributed annually",
+    metric: "300+",
+    label: "Women Empowered",
+    description: "Through skills training and entrepreneurship support.",
   },
 ]
 
-export default function AnnaSamruddhiPage() {
+export default function KarmaVikasPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-green-50/50 to-white">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/annaSamruddhi1.jpg"
-          alt="AnnaSamruddhi - Abundance of Food"
+          src="/images/karmaVikas1.png"
+          alt="KarmaVikas - Development of Work"
           fill
           className="object-cover"
           priority
@@ -120,8 +125,8 @@ export default function AnnaSamruddhiPage() {
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">AnnaSamruddhi</h1>
-            <p className="text-xl md:text-2xl font-light">Abundance of Food</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">KarmaVikas</h1>
+            <p className="text-xl md:text-2xl font-light">Development of Work</p>
           </motion.div>
         </div>
       </section>
@@ -137,11 +142,7 @@ export default function AnnaSamruddhiPage() {
         >
           <h2 className="text-3xl font-bold text-green-800 mb-6">Project Summary</h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            The AnnaSamruddhi project aims to eradicate hunger and malnutrition by ensuring access to nutritious food
-            for the most vulnerable communities. This initiative focuses on improving food security through sustainable
-            agricultural practices, enhancing food distribution systems, and raising awareness about nutrition and food
-            waste reduction. By working with local communities, government agencies, and other stakeholders, we seek to
-            create a hunger-free world, empowering individuals to lead healthy, productive lives.
+            The KarmaVikas project is designed to address unemployment and underemployment in underserved communities by providing targeted skill development programs. This initiative aims to equip individuals with market-relevant skills, enhance their employability, and connect them with sustainable job opportunities. By empowering youth, women, and marginalized groups, we strive to build a better future through enhanced skills and employment prospects.
           </p>
         </motion.div>
       </section>
@@ -195,23 +196,27 @@ export default function AnnaSamruddhiPage() {
             {[
               {
                 icon: Users,
-                title: "Vulnerable Communities",
-                description: "Rural areas, urban slums, and conflict-affected regions facing food insecurity",
+                title: "Youth",
+                description:
+                  "Unemployed or underemployed young individuals, including school dropouts and those lacking formal education.",
               },
               {
-                icon: Sprout,
-                title: "Small-scale Farmers",
-                description: "Farmers lacking access to modern agricultural technologies and markets",
+                icon: Lightbulb,
+                title: "Women",
+                description:
+                  "Marginalized women seeking financial independence through employment or entrepreneurship.",
               },
               {
-                icon: Utensils,
-                title: "At-risk Groups",
-                description: "Children and pregnant women at higher risk of malnutrition and food insecurity",
+                icon: Briefcase,
+                title: "Unemployed Adults",
+                description:
+                  "Individuals in rural or low-income areas needing retraining or upskilling for better employment.",
               },
               {
-                icon: Store,
-                title: "Local Food Suppliers",
-                description: "Markets, food banks, and cooperatives that can improve food access",
+                icon: Handshake,
+                title: "SMEs and Entrepreneurs",
+                description:
+                  "Small businesses and aspiring entrepreneurs seeking skilled labor or support for start-ups.",
               },
             ].map((item, index) => (
               <motion.div
@@ -244,109 +249,81 @@ export default function AnnaSamruddhiPage() {
             <h2 className="text-3xl font-bold text-green-800 mb-6">Project Activities</h2>
           </motion.div>
 
-          <Tabs defaultValue="distribution" className="max-w-4xl mx-auto">
-            <TabsList className="grid w-full grid-cols-4">
-              <TabsTrigger value="distribution">Distribution</TabsTrigger>
-              <TabsTrigger value="agriculture">Agriculture</TabsTrigger>
-              <TabsTrigger value="education">Education</TabsTrigger>
-              <TabsTrigger value="waste">Waste Reduction</TabsTrigger>
+          <Tabs defaultValue="training" className="max-w-4xl mx-auto">
+            <TabsList className="grid w-full grid-cols-3">
+              <TabsTrigger value="training">Skill Training</TabsTrigger>
+              <TabsTrigger value="placement">Job Placement</TabsTrigger>
+              <TabsTrigger value="entrepreneurship">Entrepreneurship</TabsTrigger>
             </TabsList>
-            <TabsContent value="distribution" className="mt-6">
+            <TabsContent value="training" className="mt-6">
               <Card className="p-6">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">Food Distribution and Relief Programs</h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-4">Skill Development Training Programs</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Regular Food Distribution</p>
+                      <p className="font-medium text-gray-800">Technical and Soft Skills</p>
                       <p className="text-gray-600">
-                        Organize food distribution programs targeting communities with high levels of food insecurity.
+                        Provide training in IT, healthcare, construction, hospitality, and entrepreneurship, including communication and leadership skills.
                       </p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Community Kitchens</p>
+                      <p className="font-medium text-gray-800">Collaboration with Experts</p>
                       <p className="text-gray-600">
-                        Set up community kitchens or food banks to provide regular access to nutritious meals.
+                        Partner with local training institutions and industry experts to deliver high-quality courses.
                       </p>
                     </div>
                   </li>
                 </ul>
               </Card>
             </TabsContent>
-            <TabsContent value="agriculture" className="mt-6">
+            <TabsContent value="placement" className="mt-6">
               <Card className="p-6">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">Support for Sustainable Agriculture</h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-4">Job Placement Services</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Farmer Training</p>
+                      <p className="font-medium text-gray-800">Partnerships with Employers</p>
                       <p className="text-gray-600">
-                        Provide training on sustainable farming techniques, including organic farming and water
-                        conservation.
+                        Establish connections with local businesses and industries to secure job placements.
                       </p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Community Gardens</p>
+                      <p className="font-medium text-gray-800">Job Fairs and Drives</p>
                       <p className="text-gray-600">
-                        Establish community gardens and urban farming initiatives to grow food locally.
+                        Organize career fairs and job placement drives to connect employers and job seekers.
                       </p>
                     </div>
                   </li>
                 </ul>
               </Card>
             </TabsContent>
-            <TabsContent value="education" className="mt-6">
+            <TabsContent value="entrepreneurship" className="mt-6">
               <Card className="p-6">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">Nutrition Education Campaigns</h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-4">Entrepreneurship Support</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Workshops and Seminars</p>
+                      <p className="font-medium text-gray-800">Business Development Training</p>
                       <p className="text-gray-600">
-                        Conduct workshops on the importance of nutrition, proper food storage, and healthy eating
-                        habits.
+                        Offer training programs for aspiring entrepreneurs, including business planning and management.
                       </p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Educational Materials</p>
+                      <p className="font-medium text-gray-800">Microfinance and Mentorship</p>
                       <p className="text-gray-600">
-                        Develop and distribute materials on balanced diets and food preparation.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </Card>
-            </TabsContent>
-            <TabsContent value="waste" className="mt-6">
-              <Card className="p-6">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">Food Waste Reduction Programs</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
-                    <div>
-                      <p className="font-medium text-gray-800">Food Rescue Programs</p>
-                      <p className="text-gray-600">
-                        Partner with local businesses to collect excess food for redistribution.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
-                    <div>
-                      <p className="font-medium text-gray-800">Awareness Campaigns</p>
-                      <p className="text-gray-600">
-                        Educate people on reducing food waste through portion control and preservation techniques.
+                        Provide access to microfinancing and mentorship to support new businesses.
                       </p>
                     </div>
                   </li>
@@ -413,19 +390,18 @@ export default function AnnaSamruddhiPage() {
                 <thead>
                   <tr className="border-b border-gray-200">
                     <th className="text-left py-2 font-semibold text-green-800">Item</th>
-                    <th className="text-right py-2 font-semibold text-green-800">Cost (USD)</th>
+                    <th className="text-right py-2 font-semibold text-green-800">Cost (INR)</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    "Food Distribution & Relief Programs",
-                    "Sustainable Agriculture Training & Resources",
-                    "Nutrition Education Campaigns",
-                    "Food Waste Reduction Initiatives",
-                    "Local Food System Development",
-                    "Monitoring and Evaluation",
-                    "Staffing and Logistics",
-                    "Community Outreach and Advocacy",
+                    "Skill Development Training Programs",
+                    "Job Placement and Career Services",
+                    "Entrepreneurship Support & Microfinance",
+                    "Women&apos;s Empowerment Programs",
+                    "Monitoring, Evaluation, and Reporting",
+                    "Administrative Costs and Staff",
+                    "Community Outreach and Engagement",
                     "Contingency Fund",
                   ].map((item, index) => (
                     <tr key={index} className="border-b border-gray-100">
@@ -463,28 +439,28 @@ export default function AnnaSamruddhiPage() {
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {[
               {
-                icon: HeartHandshake,
-                title: "Community Ownership",
+                icon: Handshake,
+                title: "Partnerships with Local Businesses",
                 description:
-                  "Encourage community participation by involving local leaders, farmers, and families in the planning and execution of the project. This will foster a sense of ownership and increase the likelihood of long-term success.",
-              },
-              {
-                icon: Users,
-                title: "Capacity Building",
-                description:
-                  "By training farmers and local organizations, the project will build long-term capacity to address food security challenges independently.",
+                  "Collaboration with local enterprises ensures the program&apos;s relevance to the job market and long-term viability.",
               },
               {
                 icon: Briefcase,
-                title: "Local Partnerships",
+                title: "Self-sustaining Entrepreneurship",
                 description:
-                  "Strengthen partnerships with local businesses, governments, and NGOs to ensure continuous support and integration into broader food security programs.",
+                  "Empowering individuals with entrepreneurship skills and microfinance reduces long-term dependency on external support.",
               },
               {
-                icon: IndianRupee,
-                title: "Revenue-Generating Activities",
+                icon: GraduationCap,
+                title: "Ongoing Training and Alumni Support",
                 description:
-                  "Establish sustainable food systems, including farmers' cooperatives, that can generate revenue for further development and expansion of the project.",
+                  "Graduates receive continued guidance, mentoring, and resources to ensure long-term success.",
+              },
+              {
+                icon: Users,
+                title: "Public and Private Sector Involvement",
+                description:
+                  "Involving local governments and private companies secures long-term funding and resources.",
               },
             ].map((item, index) => (
               <motion.div
@@ -521,21 +497,27 @@ export default function AnnaSamruddhiPage() {
             {[
               {
                 icon: BarChart,
-                title: "Food Security Metrics",
+                title: "Tracking Employment Outcomes",
                 description:
-                  "Regularly track key indicators of food insecurity, such as the number of people receiving food assistance, changes in agricultural yields, and improvements in community health and nutrition.",
-              },
-              {
-                icon: FileText,
-                title: "Surveys and Feedback",
-                description:
-                  "Conduct surveys to assess the impact of food distribution programs and agricultural training. Use the feedback to make adjustments and improve the program.",
+                  "Monitor the number of individuals placed in jobs, their retention rates, and the sectors they are employed in.",
               },
               {
                 icon: LineChart,
-                title: "Annual Review",
+                title: "Entrepreneurship Success Rates",
                 description:
-                  "An annual review will assess the effectiveness of the program, identify any challenges, and ensure that objectives are being met.",
+                  "Track the number of businesses started, their sustainability, and their impact on the local economy.",
+              },
+              {
+                icon: FileText,
+                title: "Feedback from Beneficiaries",
+                description:
+                  "Conduct surveys and interviews with participants to assess the quality and relevance of training programs.",
+              },
+              {
+                icon: CheckCircle2,
+                title: "Impact Assessment",
+                description:
+                  "Regularly assess the overall impact of the program on poverty reduction, economic independence, and community development.",
               },
             ].map((item, index) => (
               <motion.div
@@ -559,7 +541,6 @@ export default function AnnaSamruddhiPage() {
         </div>
       </section>
 
-      
       {/* Expected Outcomes */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -604,14 +585,13 @@ export default function AnnaSamruddhiPage() {
           >
             <h2 className="text-3xl font-bold text-green-800 mb-6">Support Our Mission</h2>
             <p className="text-gray-600 text-lg mb-8">
-              Join us in our mission to eradicate hunger and ensure food security for all. Your support can make a
-              significant difference in the lives of vulnerable communities.
+              Join us in our mission to empower individuals through skill development and employment opportunities. Your support can make a significant difference in creating sustainable livelihoods for underserved communities.
             </p>
             <div className="flex justify-center gap-4">
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
                 Donate Now
               </Button>
-              <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-green-50">
+              <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-blue-50">
                 Volunteer With Us
               </Button>
             </div>
@@ -621,4 +601,3 @@ export default function AnnaSamruddhiPage() {
     </main>
   )
 }
-

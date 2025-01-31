@@ -5,16 +5,14 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {
-  Utensils,
   Sprout,
-  TruckIcon,
-  BookOpen,
-  Recycle,
-  Store,
+  TreePine,
+  Leaf,
+  CloudRain,
   Users,
+  GraduationCap,
   CheckCircle2,
   Clock,
-  HeartHandshake,
   Briefcase,
   IndianRupee,
   BarChart,
@@ -25,94 +23,103 @@ import Image from "next/image"
 
 const objectives = [
   {
-    title: "Eradicate Hunger and Malnutrition",
-    description: "Ensure access to nutritious food for communities facing food insecurity.",
-    icon: Utensils,
-  },
-  {
-    title: "Promote Sustainable Agriculture",
-    description: "Support small-scale farmers and encourage sustainable farming practices to increase food production.",
+    title: "Promote Sustainable Farming",
+    description:
+      "Encourage local farmers to adopt eco-friendly farming practices such as agroforestry, organic farming, and crop rotation.",
     icon: Sprout,
   },
   {
-    title: "Enhance Food Distribution Systems",
-    description:
-      "Strengthen food distribution networks to ensure that food reaches the most vulnerable populations in a timely manner.",
-    icon: TruckIcon,
+    title: "Tree Plantation for Ecosystem Restoration",
+    description: "Plant native trees to restore degraded land, improve local ecosystems, and enhance biodiversity.",
+    icon: TreePine,
   },
   {
-    title: "Raise Awareness on Nutrition",
+    title: "Improve Livelihoods",
     description:
-      "Educate communities about the importance of balanced diets, healthy eating habits, and food preservation.",
-    icon: BookOpen,
+      "Enhance farmers' income by diversifying crops with fruit trees, timber trees, and other tree-based products.",
+    icon: Leaf,
   },
   {
-    title: "Reduce Food Waste",
-    description: "Implement initiatives to reduce food loss and waste at the community level and among food suppliers.",
-    icon: Recycle,
+    title: "Climate Change Mitigation",
+    description:
+      "Contribute to climate change mitigation by sequestering carbon through tree planting and sustainable farming techniques.",
+    icon: CloudRain,
   },
   {
-    title: "Support Local Food Systems",
+    title: "Soil and Water Conservation",
+    description: "Implement practices to conserve soil and water, reduce erosion, and improve the quality of farmland.",
+    icon: CloudRain,
+  },
+  {
+    title: "Community Engagement and Education",
     description:
-      "Empower local communities by promoting local food systems and connecting farmers directly to markets.",
-    icon: Store,
+      "Engage local communities in the project and raise awareness about the benefits of combining agriculture with nature conservation.",
+    icon: Users,
   },
 ]
 
 const timeline = [
   {
-    phase: "Phase 1: Needs Assessment & Planning",
-    duration: "2 months",
-    details: "Identify target communities, assess food security needs, and set up partnerships.",
+    phase: "Phase 1: Community Engagement and Planning",
+    duration: "1-2 months",
+    details:
+      "Engage local communities, identify suitable lands for agroforestry, and plan for tree planting activities.",
   },
   {
-    phase: "Phase 2: Implementation",
+    phase: "Phase 2: Farmer Training and Awareness",
+    duration: "3 months",
+    details: "Conduct training programs on agroforestry, sustainable farming, and tree plantation.",
+  },
+  {
+    phase: "Phase 3: Tree Plantation and Agroforestry Setup",
+    duration: "6 months",
+    details: "Begin tree plantation and implement agroforestry systems on selected farmlands.",
+  },
+  {
+    phase: "Phase 4: Maintenance and Monitoring",
+    duration: "Ongoing (12 months)",
+    details:
+      "Continue maintenance of tree plantations, assess the growth of trees and crops, and provide support to farmers.",
+  },
+  {
+    phase: "Phase 5: Community Education and Expansion",
     duration: "12 months",
-    details: "Begin food distribution, agricultural training, nutrition education, and food waste reduction programs.",
-  },
-  {
-    phase: "Phase 3: Monitoring & Evaluation",
-    duration: "6 months",
-    details: "Track the progress of food distribution and agriculture programs, gather feedback.",
-  },
-  {
-    phase: "Phase 4: Expansion & Sustainability",
-    duration: "6 months",
-    details: "Expand the program to additional communities and ensure sustainability by involving local stakeholders.",
+    details:
+      "Expand awareness programs, conduct more tree-planting drives, and involve additional farmers in the project.",
   },
 ]
 
 const outcomes = [
   {
+    metric: "200+",
+    label: "Farmers Adopting Agroforestry",
+    description: "Improving crop yields and soil fertility through sustainable practices.",
+  },
+  {
+    metric: "50,000",
+    label: "Trees Planted",
+    description: "Leading to restored habitats and enhanced biodiversity.",
+  },
+  {
     metric: "5,000+",
-    label: "Food Aid Recipients",
-    description: "Vulnerable individuals and families provided with direct food aid",
+    label: "Community Members Engaged",
+    description: "Involved in environmental activities and sustainable farming initiatives.",
   },
   {
-    metric: "500+",
-    label: "Trained Farmers",
-    description: "Small-scale farmers trained on sustainable agricultural techniques",
-  },
-  {
-    metric: "10,000+",
-    label: "Nutrition Education",
-    description: "Individuals educated on healthy eating practices and proper food storage",
-  },
-  {
-    metric: "10 tons",
-    label: "Food Rescued",
-    description: "Excess food rescued and redistributed annually",
+    metric: "Significant",
+    label: "Carbon Sequestration",
+    description: "Through tree planting and sustainable farming practices.",
   },
 ]
 
-export default function AnnaSamruddhiPage() {
+export default function PrakritiSamvardhanPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-green-50/50 to-white">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/annaSamruddhi1.jpg"
-          alt="AnnaSamruddhi - Abundance of Food"
+          src="/images/planting_trees.jpeg"
+          alt="PrakritiSamvardhan - Nature Nurturing"
           fill
           className="object-cover"
           priority
@@ -120,8 +127,8 @@ export default function AnnaSamruddhiPage() {
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">AnnaSamruddhi</h1>
-            <p className="text-xl md:text-2xl font-light">Abundance of Food</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">PrakritiSamvardhan</h1>
+            <p className="text-xl md:text-2xl font-light">Nature Nurturing</p>
           </motion.div>
         </div>
       </section>
@@ -137,11 +144,10 @@ export default function AnnaSamruddhiPage() {
         >
           <h2 className="text-3xl font-bold text-green-800 mb-6">Project Summary</h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            The AnnaSamruddhi project aims to eradicate hunger and malnutrition by ensuring access to nutritious food
-            for the most vulnerable communities. This initiative focuses on improving food security through sustainable
-            agricultural practices, enhancing food distribution systems, and raising awareness about nutrition and food
-            waste reduction. By working with local communities, government agencies, and other stakeholders, we seek to
-            create a hunger-free world, empowering individuals to lead healthy, productive lives.
+            The PrakritiSamvardhan" project is a holistic approach to integrate tree planting with sustainable farming
+            practices to restore ecosystems, improve soil health, combat climate change, and enhance biodiversity. This
+            initiative aims to empower local communities by promoting environmentally friendly agricultural practices,
+            tree plantation, and fostering a deeper connection between farming and nature conservation.
           </p>
         </motion.div>
       </section>
@@ -194,24 +200,28 @@ export default function AnnaSamruddhiPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {[
               {
-                icon: Users,
-                title: "Vulnerable Communities",
-                description: "Rural areas, urban slums, and conflict-affected regions facing food insecurity",
-              },
-              {
                 icon: Sprout,
-                title: "Small-scale Farmers",
-                description: "Farmers lacking access to modern agricultural technologies and markets",
+                title: "Farmers",
+                description:
+                  "Local farmers engaged in traditional farming practices who need support in adopting sustainable techniques.",
               },
               {
-                icon: Utensils,
-                title: "At-risk Groups",
-                description: "Children and pregnant women at higher risk of malnutrition and food insecurity",
+                icon: Users,
+                title: "Local Communities",
+                description:
+                  "Communities in rural areas that rely on agriculture for their livelihood and are affected by environmental degradation.",
               },
               {
-                icon: Store,
-                title: "Local Food Suppliers",
-                description: "Markets, food banks, and cooperatives that can improve food access",
+                icon: GraduationCap,
+                title: "Students and Youth Groups",
+                description:
+                  "Educating younger generations about sustainable farming, agroforestry, and tree plantation.",
+              },
+              {
+                icon: Briefcase,
+                title: "Environmental Organizations",
+                description:
+                  "NGOs, environmental groups, and government agencies that can collaborate in fostering nature conservation.",
               },
             ].map((item, index) => (
               <motion.div
@@ -244,109 +254,85 @@ export default function AnnaSamruddhiPage() {
             <h2 className="text-3xl font-bold text-green-800 mb-6">Project Activities</h2>
           </motion.div>
 
-          <Tabs defaultValue="distribution" className="max-w-4xl mx-auto">
-            <TabsList className="grid w-full grid-cols-4">
-              <TabsTrigger value="distribution">Distribution</TabsTrigger>
-              <TabsTrigger value="agriculture">Agriculture</TabsTrigger>
-              <TabsTrigger value="education">Education</TabsTrigger>
-              <TabsTrigger value="waste">Waste Reduction</TabsTrigger>
+          <Tabs defaultValue="training" className="max-w-4xl mx-auto">
+            <TabsList className="grid w-full grid-cols-3">
+              <TabsTrigger value="training">Farmer Training</TabsTrigger>
+              <TabsTrigger value="plantation">Tree Plantation</TabsTrigger>
+              <TabsTrigger value="conservation">Conservation</TabsTrigger>
             </TabsList>
-            <TabsContent value="distribution" className="mt-6">
+            <TabsContent value="training" className="mt-6">
               <Card className="p-6">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">Food Distribution and Relief Programs</h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-4">Farmer Training and Capacity Building</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Regular Food Distribution</p>
+                      <p className="font-medium text-gray-800">Workshops and Training Sessions</p>
                       <p className="text-gray-600">
-                        Organize food distribution programs targeting communities with high levels of food insecurity.
+                        Organize sessions on agroforestry, sustainable farming practices, organic farming, crop
+                        rotation, and soil conservation.
                       </p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Community Kitchens</p>
+                      <p className="font-medium text-gray-800">Resource Provision</p>
                       <p className="text-gray-600">
-                        Set up community kitchens or food banks to provide regular access to nutritious meals.
+                        Provide farmers with seeds, tools, and knowledge on implementing agroforestry systems.
                       </p>
                     </div>
                   </li>
                 </ul>
               </Card>
             </TabsContent>
-            <TabsContent value="agriculture" className="mt-6">
+            <TabsContent value="plantation" className="mt-6">
               <Card className="p-6">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">Support for Sustainable Agriculture</h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-4">Tree Plantation and Ecosystem Restoration</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Farmer Training</p>
+                      <p className="font-medium text-gray-800">Land Identification</p>
                       <p className="text-gray-600">
-                        Provide training on sustainable farming techniques, including organic farming and water
-                        conservation.
+                        Identify degraded or underutilized lands suitable for tree plantation and agroforestry systems.
                       </p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Community Gardens</p>
+                      <p className="font-medium text-gray-800">Native Tree Planting</p>
                       <p className="text-gray-600">
-                        Establish community gardens and urban farming initiatives to grow food locally.
+                        Collaborate with local farmers and communities to plant a variety of native and fruit-bearing
+                        trees.
                       </p>
                     </div>
                   </li>
                 </ul>
               </Card>
             </TabsContent>
-            <TabsContent value="education" className="mt-6">
+            <TabsContent value="conservation" className="mt-6">
               <Card className="p-6">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">Nutrition Education Campaigns</h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-4">Soil and Water Conservation</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Workshops and Seminars</p>
+                      <p className="font-medium text-gray-800">Soil Conservation Methods</p>
                       <p className="text-gray-600">
-                        Conduct workshops on the importance of nutrition, proper food storage, and healthy eating
-                        habits.
+                        Train farmers on soil conservation methods such as mulching, contour farming, and cover
+                        cropping.
                       </p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Educational Materials</p>
+                      <p className="font-medium text-gray-800">Water-Saving Techniques</p>
                       <p className="text-gray-600">
-                        Develop and distribute materials on balanced diets and food preparation.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </Card>
-            </TabsContent>
-            <TabsContent value="waste" className="mt-6">
-              <Card className="p-6">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">Food Waste Reduction Programs</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
-                    <div>
-                      <p className="font-medium text-gray-800">Food Rescue Programs</p>
-                      <p className="text-gray-600">
-                        Partner with local businesses to collect excess food for redistribution.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
-                    <div>
-                      <p className="font-medium text-gray-800">Awareness Campaigns</p>
-                      <p className="text-gray-600">
-                        Educate people on reducing food waste through portion control and preservation techniques.
+                        Implement water-saving irrigation techniques, including drip irrigation, rainwater harvesting,
+                        and efficient watering systems.
                       </p>
                     </div>
                   </li>
@@ -413,19 +399,18 @@ export default function AnnaSamruddhiPage() {
                 <thead>
                   <tr className="border-b border-gray-200">
                     <th className="text-left py-2 font-semibold text-green-800">Item</th>
-                    <th className="text-right py-2 font-semibold text-green-800">Cost (USD)</th>
+                    <th className="text-right py-2 font-semibold text-green-800">Cost (INR)</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    "Food Distribution & Relief Programs",
-                    "Sustainable Agriculture Training & Resources",
-                    "Nutrition Education Campaigns",
-                    "Food Waste Reduction Initiatives",
-                    "Local Food System Development",
+                    "Farmer Training and Capacity Building",
+                    "Tree Plantation and Maintenance",
+                    "Agroforestry System Implementation",
+                    "Soil and Water Conservation Programs",
+                    "Environmental Education and Outreach",
                     "Monitoring and Evaluation",
-                    "Staffing and Logistics",
-                    "Community Outreach and Advocacy",
+                    "Staffing and Operational Costs",
                     "Contingency Fund",
                   ].map((item, index) => (
                     <tr key={index} className="border-b border-gray-100">
@@ -463,28 +448,28 @@ export default function AnnaSamruddhiPage() {
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {[
               {
-                icon: HeartHandshake,
+                icon: Users,
                 title: "Community Ownership",
                 description:
-                  "Encourage community participation by involving local leaders, farmers, and families in the planning and execution of the project. This will foster a sense of ownership and increase the likelihood of long-term success.",
+                  "Involving local farmers and communities in the planning and implementation stages will ensure long-term ownership and commitment to the project's goals.",
               },
               {
-                icon: Users,
+                icon: GraduationCap,
                 title: "Capacity Building",
                 description:
-                  "By training farmers and local organizations, the project will build long-term capacity to address food security challenges independently.",
-              },
-              {
-                icon: Briefcase,
-                title: "Local Partnerships",
-                description:
-                  "Strengthen partnerships with local businesses, governments, and NGOs to ensure continuous support and integration into broader food security programs.",
+                  "By training farmers in sustainable farming techniques and agroforestry, we are empowering them with the skills to maintain the project beyond its duration.",
               },
               {
                 icon: IndianRupee,
-                title: "Revenue-Generating Activities",
+                title: "Economic Incentives",
                 description:
-                  "Establish sustainable food systems, including farmers' cooperatives, that can generate revenue for further development and expansion of the project.",
+                  "The introduction of fruit and timber-bearing trees will provide farmers with additional income streams, motivating them to continue practicing agroforestry.",
+              },
+              {
+                icon: LineChart,
+                title: "Ongoing Monitoring",
+                description:
+                  "Continuous monitoring of tree plantations, soil health, and water conservation will allow for adaptive management and ensure the project's sustainability.",
               },
             ].map((item, index) => (
               <motion.div
@@ -520,22 +505,28 @@ export default function AnnaSamruddhiPage() {
           <div className="max-w-4xl mx-auto">
             {[
               {
-                icon: BarChart,
-                title: "Food Security Metrics",
+                icon: TreePine,
+                title: "Tree Plantation Success Rates",
                 description:
-                  "Regularly track key indicators of food insecurity, such as the number of people receiving food assistance, changes in agricultural yields, and improvements in community health and nutrition.",
+                  "Regular checks will be conducted to assess the survival and growth of trees and determine the effectiveness of the agroforestry system.",
+              },
+              {
+                icon: CloudRain,
+                title: "Soil and Water Health",
+                description:
+                  "Soil health will be monitored to evaluate the impact of sustainable farming practices and tree planting on soil fertility and water retention.",
               },
               {
                 icon: FileText,
-                title: "Surveys and Feedback",
+                title: "Farmer Feedback",
                 description:
-                  "Conduct surveys to assess the impact of food distribution programs and agricultural training. Use the feedback to make adjustments and improve the program.",
+                  "Collect feedback from farmers on the improved crop yields, income generation, and their satisfaction with agroforestry methods.",
               },
               {
-                icon: LineChart,
-                title: "Annual Review",
+                icon: BarChart,
+                title: "Environmental Impact",
                 description:
-                  "An annual review will assess the effectiveness of the program, identify any challenges, and ensure that objectives are being met.",
+                  "Conduct biodiversity assessments and track the improvement in local ecosystems and wildlife activity due to the project.",
               },
             ].map((item, index) => (
               <motion.div
@@ -559,7 +550,6 @@ export default function AnnaSamruddhiPage() {
         </div>
       </section>
 
-      
       {/* Expected Outcomes */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -604,8 +594,8 @@ export default function AnnaSamruddhiPage() {
           >
             <h2 className="text-3xl font-bold text-green-800 mb-6">Support Our Mission</h2>
             <p className="text-gray-600 text-lg mb-8">
-              Join us in our mission to eradicate hunger and ensure food security for all. Your support can make a
-              significant difference in the lives of vulnerable communities.
+              Join us in our mission to promote sustainable farming and restore nature. Your support can make a
+              significant difference in creating a greener, more sustainable future for our planet.
             </p>
             <div className="flex justify-center gap-4">
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">

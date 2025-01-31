@@ -137,7 +137,7 @@ export default function AnnaSamruddhiPage() {
         >
           <h2 className="text-3xl font-bold text-green-800 mb-6">Project Summary</h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            The AnnaSamruddhi project aims to eradicate hunger and malnutrition by ensuring access to nutritious food
+            The "AnnaSamruddhi project aims to eradicate hunger and malnutrition by ensuring access to nutritious food
             for the most vulnerable communities. This initiative focuses on improving food security through sustainable
             agricultural practices, enhancing food distribution systems, and raising awareness about nutrition and food
             waste reduction. By working with local communities, government agencies, and other stakeholders, we seek to

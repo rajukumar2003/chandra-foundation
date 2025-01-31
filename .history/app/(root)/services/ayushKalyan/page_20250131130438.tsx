@@ -5,16 +5,16 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {
-  Utensils,
-  Sprout,
-  TruckIcon,
+  HeartPulse,
+  Stethoscope,
+  Syringe,
+  Baby,
+  Brain,
+  ShieldCheck,
   BookOpen,
-  Recycle,
-  Store,
   Users,
   CheckCircle2,
   Clock,
-  HeartHandshake,
   Briefcase,
   IndianRupee,
   BarChart,
@@ -25,94 +25,91 @@ import Image from "next/image"
 
 const objectives = [
   {
-    title: "Eradicate Hunger and Malnutrition",
-    description: "Ensure access to nutritious food for communities facing food insecurity.",
-    icon: Utensils,
+    title: "Improve Access to Basic Healthcare",
+    description: "Provide essential health services, including primary care, maternal and child health services, and vaccinations.",
+    icon: HeartPulse,
   },
   {
-    title: "Promote Sustainable Agriculture",
-    description: "Support small-scale farmers and encourage sustainable farming practices to increase food production.",
-    icon: Sprout,
+    title: "Preventive Health and Education",
+    description: "Raise awareness about hygiene, nutrition, disease prevention, and healthy lifestyle choices.",
+    icon: ShieldCheck,
   },
   {
-    title: "Enhance Food Distribution Systems",
-    description:
-      "Strengthen food distribution networks to ensure that food reaches the most vulnerable populations in a timely manner.",
-    icon: TruckIcon,
+    title: "Maternal and Child Health",
+    description: "Reduce maternal and child mortality rates by providing antenatal care, skilled birth attendants, and postnatal care.",
+    icon: Baby,
   },
   {
-    title: "Raise Awareness on Nutrition",
-    description:
-      "Educate communities about the importance of balanced diets, healthy eating habits, and food preservation.",
-    icon: BookOpen,
+    title: "Combat Infectious Diseases",
+    description: "Implement vaccination drives and public health campaigns to prevent and control common infectious diseases.",
+    icon: Syringe,
   },
   {
-    title: "Reduce Food Waste",
-    description: "Implement initiatives to reduce food loss and waste at the community level and among food suppliers.",
-    icon: Recycle,
+    title: "Mental Health Awareness",
+    description: "Raise awareness about mental health issues, reduce stigma, and provide support for mental health services.",
+    icon: Brain,
   },
   {
-    title: "Support Local Food Systems",
-    description:
-      "Empower local communities by promoting local food systems and connecting farmers directly to markets.",
-    icon: Store,
+    title: "Strengthen Local Healthcare Infrastructure",
+    description: "Build capacity in local healthcare facilities through training, equipment, and resources.",
+    icon: Stethoscope,
   },
 ]
 
 const timeline = [
   {
-    phase: "Phase 1: Needs Assessment & Planning",
+    phase: "Phase 1: Planning & Preparation",
     duration: "2 months",
-    details: "Identify target communities, assess food security needs, and set up partnerships.",
+    details: "Community assessment, partnership development, and resource mobilization.",
   },
   {
     phase: "Phase 2: Implementation",
     duration: "12 months",
-    details: "Begin food distribution, agricultural training, nutrition education, and food waste reduction programs.",
+    details: "Launch mobile health clinics, health education campaigns, and maternal health programs.",
   },
   {
     phase: "Phase 3: Monitoring & Evaluation",
     duration: "6 months",
-    details: "Track the progress of food distribution and agriculture programs, gather feedback.",
+    details: "Assess the effectiveness of health interventions and adjust based on feedback.",
   },
   {
-    phase: "Phase 4: Expansion & Sustainability",
+    phase: "Phase 4: Sustainability",
     duration: "6 months",
-    details: "Expand the program to additional communities and ensure sustainability by involving local stakeholders.",
+    details: "Strengthen local healthcare infrastructure and partnerships for long-term impact.",
   },
 ]
 
 const outcomes = [
   {
-    metric: "5,000+",
-    label: "Food Aid Recipients",
-    description: "Vulnerable individuals and families provided with direct food aid",
+    metric: "10,000+",
+    label: "Individuals Reached",
+    description: "Medical consultations, vaccinations, and maternal care services provided.",
   },
   {
     metric: "500+",
-    label: "Trained Farmers",
-    description: "Small-scale farmers trained on sustainable agricultural techniques",
+    label: "Mental Health Support",
+    description: "Individuals receiving counseling and mental health support.",
   },
   {
-    metric: "10,000+",
-    label: "Nutrition Education",
-    description: "Individuals educated on healthy eating practices and proper food storage",
+    metric: "80%",
+    label: "Health Awareness",
+    description: "Community members reporting increased knowledge about disease prevention.",
   },
   {
-    metric: "10 tons",
-    label: "Food Rescued",
-    description: "Excess food rescued and redistributed annually",
+    metric: "50+",
+    label: "Trained Providers",
+    description: "Local healthcare providers trained to deliver quality care.",
   },
 ]
 
-export default function AnnaSamruddhiPage() {
+export default function AyushKalyanPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-green-50/50 to-white">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/annaSamruddhi1.jpg"
-          alt="AnnaSamruddhi - Abundance of Food"
+          src="/images/ayushKlyaan23.jpg"
+          alt="AyushKalyan - Well-being of Life"
           fill
           className="object-cover"
           priority
@@ -120,8 +117,8 @@ export default function AnnaSamruddhiPage() {
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">AnnaSamruddhi</h1>
-            <p className="text-xl md:text-2xl font-light">Abundance of Food</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">AyushKalyan</h1>
+            <p className="text-xl md:text-2xl font-light">Well-being of Life</p>
           </motion.div>
         </div>
       </section>
@@ -137,11 +134,7 @@ export default function AnnaSamruddhiPage() {
         >
           <h2 className="text-3xl font-bold text-green-800 mb-6">Project Summary</h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            The AnnaSamruddhi project aims to eradicate hunger and malnutrition by ensuring access to nutritious food
-            for the most vulnerable communities. This initiative focuses on improving food security through sustainable
-            agricultural practices, enhancing food distribution systems, and raising awareness about nutrition and food
-            waste reduction. By working with local communities, government agencies, and other stakeholders, we seek to
-            create a hunger-free world, empowering individuals to lead healthy, productive lives.
+            The AyushKalyan project aims to address healthcare gaps in underserved and marginalized communities. This initiative provides access to basic healthcare services, improves health awareness, and empowers individuals to take charge of their health through education, preventive care, and treatment programs. By focusing on maternal and child health, combating infectious diseases, and promoting mental health, we strive to create a healthier, more equitable future for all.
           </p>
         </motion.div>
       </section>
@@ -195,23 +188,23 @@ export default function AnnaSamruddhiPage() {
             {[
               {
                 icon: Users,
-                title: "Vulnerable Communities",
-                description: "Rural areas, urban slums, and conflict-affected regions facing food insecurity",
+                title: "Marginalized Communities",
+                description: "Low-income populations in rural and underserved urban areas.",
               },
               {
-                icon: Sprout,
-                title: "Small-scale Farmers",
-                description: "Farmers lacking access to modern agricultural technologies and markets",
+                icon: Baby,
+                title: "Women and Children",
+                description: "Individuals in need of maternal and child health services.",
               },
               {
-                icon: Utensils,
-                title: "At-risk Groups",
-                description: "Children and pregnant women at higher risk of malnutrition and food insecurity",
+                icon: HeartPulse,
+                title: "Elderly Individuals",
+                description: "Older adults requiring specialized care and preventive services.",
               },
               {
-                icon: Store,
-                title: "Local Food Suppliers",
-                description: "Markets, food banks, and cooperatives that can improve food access",
+                icon: Brain,
+                title: "Youth and Adolescents",
+                description: "Young people in need of mental health education and disease prevention awareness.",
               },
             ].map((item, index) => (
               <motion.div
@@ -244,58 +237,31 @@ export default function AnnaSamruddhiPage() {
             <h2 className="text-3xl font-bold text-green-800 mb-6">Project Activities</h2>
           </motion.div>
 
-          <Tabs defaultValue="distribution" className="max-w-4xl mx-auto">
-            <TabsList className="grid w-full grid-cols-4">
-              <TabsTrigger value="distribution">Distribution</TabsTrigger>
-              <TabsTrigger value="agriculture">Agriculture</TabsTrigger>
-              <TabsTrigger value="education">Education</TabsTrigger>
-              <TabsTrigger value="waste">Waste Reduction</TabsTrigger>
+          <Tabs defaultValue="clinics" className="max-w-4xl mx-auto">
+            <TabsList className="grid w-full grid-cols-3">
+              <TabsTrigger value="clinics">Mobile Clinics</TabsTrigger>
+              <TabsTrigger value="education">Health Education</TabsTrigger>
+              <TabsTrigger value="mental-health">Mental Health</TabsTrigger>
             </TabsList>
-            <TabsContent value="distribution" className="mt-6">
+            <TabsContent value="clinics" className="mt-6">
               <Card className="p-6">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">Food Distribution and Relief Programs</h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-4">Mobile Health Clinics</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Regular Food Distribution</p>
+                      <p className="font-medium text-gray-800">Primary Care Services</p>
                       <p className="text-gray-600">
-                        Organize food distribution programs targeting communities with high levels of food insecurity.
+                        Provide essential health services, including consultations, vaccinations, and maternal health checkups.
                       </p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Community Kitchens</p>
+                      <p className="font-medium text-gray-800">Disease Screenings</p>
                       <p className="text-gray-600">
-                        Set up community kitchens or food banks to provide regular access to nutritious meals.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </Card>
-            </TabsContent>
-            <TabsContent value="agriculture" className="mt-6">
-              <Card className="p-6">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">Support for Sustainable Agriculture</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
-                    <div>
-                      <p className="font-medium text-gray-800">Farmer Training</p>
-                      <p className="text-gray-600">
-                        Provide training on sustainable farming techniques, including organic farming and water
-                        conservation.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
-                    <div>
-                      <p className="font-medium text-gray-800">Community Gardens</p>
-                      <p className="text-gray-600">
-                        Establish community gardens and urban farming initiatives to grow food locally.
+                        Conduct screenings for hypertension, diabetes, and tuberculosis in underserved areas.
                       </p>
                     </div>
                   </li>
@@ -304,15 +270,14 @@ export default function AnnaSamruddhiPage() {
             </TabsContent>
             <TabsContent value="education" className="mt-6">
               <Card className="p-6">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">Nutrition Education Campaigns</h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-4">Health Education Campaigns</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
                       <p className="font-medium text-gray-800">Workshops and Seminars</p>
                       <p className="text-gray-600">
-                        Conduct workshops on the importance of nutrition, proper food storage, and healthy eating
-                        habits.
+                        Educate communities on hygiene, nutrition, and disease prevention through interactive sessions.
                       </p>
                     </div>
                   </li>
@@ -321,32 +286,32 @@ export default function AnnaSamruddhiPage() {
                     <div>
                       <p className="font-medium text-gray-800">Educational Materials</p>
                       <p className="text-gray-600">
-                        Develop and distribute materials on balanced diets and food preparation.
+                        Distribute pamphlets and posters in local languages to promote healthy living.
                       </p>
                     </div>
                   </li>
                 </ul>
               </Card>
             </TabsContent>
-            <TabsContent value="waste" className="mt-6">
+            <TabsContent value="mental-health" className="mt-6">
               <Card className="p-6">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">Food Waste Reduction Programs</h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-4">Mental Health Programs</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Food Rescue Programs</p>
+                      <p className="font-medium text-gray-800">Counseling Services</p>
                       <p className="text-gray-600">
-                        Partner with local businesses to collect excess food for redistribution.
+                        Provide mental health support through helplines and community-based counseling.
                       </p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Awareness Campaigns</p>
+                      <p className="font-medium text-gray-800">Awareness Workshops</p>
                       <p className="text-gray-600">
-                        Educate people on reducing food waste through portion control and preservation techniques.
+                        Conduct workshops on stress management, coping mechanisms, and reducing stigma around mental health.
                       </p>
                     </div>
                   </li>
@@ -418,14 +383,15 @@ export default function AnnaSamruddhiPage() {
                 </thead>
                 <tbody>
                   {[
-                    "Food Distribution & Relief Programs",
-                    "Sustainable Agriculture Training & Resources",
-                    "Nutrition Education Campaigns",
-                    "Food Waste Reduction Initiatives",
-                    "Local Food System Development",
+                    "Personnel (Doctors, Nurses, Trainers)",
+                    "Mobile Health Units",
+                    "Healthcare Supplies and Medications",
+                    "Health Education Materials",
+                    "Vaccination Campaigns",
+                    "Mental Health Programs",
+                    "Capacity Building for Providers",
                     "Monitoring and Evaluation",
-                    "Staffing and Logistics",
-                    "Community Outreach and Advocacy",
+                    "Community Outreach Activities",
                     "Contingency Fund",
                   ].map((item, index) => (
                     <tr key={index} className="border-b border-gray-100">
@@ -463,28 +429,28 @@ export default function AnnaSamruddhiPage() {
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {[
               {
-                icon: HeartHandshake,
-                title: "Community Ownership",
-                description:
-                  "Encourage community participation by involving local leaders, farmers, and families in the planning and execution of the project. This will foster a sense of ownership and increase the likelihood of long-term success.",
-              },
-              {
                 icon: Users,
-                title: "Capacity Building",
+                title: "Community Engagement",
                 description:
-                  "By training farmers and local organizations, the project will build long-term capacity to address food security challenges independently.",
+                  "Involve community members in health education and decision-making to foster ownership and long-term commitment.",
               },
               {
                 icon: Briefcase,
-                title: "Local Partnerships",
+                title: "Capacity Building",
                 description:
-                  "Strengthen partnerships with local businesses, governments, and NGOs to ensure continuous support and integration into broader food security programs.",
+                  "Train local healthcare providers to ensure continued access to quality care after the project ends.",
               },
               {
                 icon: IndianRupee,
-                title: "Revenue-Generating Activities",
+                title: "Partnerships with Local Authorities",
                 description:
-                  "Establish sustainable food systems, including farmers' cooperatives, that can generate revenue for further development and expansion of the project.",
+                  "Collaborate with local health authorities to integrate the project into existing healthcare systems.",
+              },
+              {
+                icon: HeartPulse,
+                title: "Income-Generating Activities",
+                description:
+                  "Partner with local businesses to fund health education materials and vaccination programs.",
               },
             ].map((item, index) => (
               <motion.div
@@ -521,21 +487,21 @@ export default function AnnaSamruddhiPage() {
             {[
               {
                 icon: BarChart,
-                title: "Food Security Metrics",
+                title: "Health Metrics",
                 description:
-                  "Regularly track key indicators of food insecurity, such as the number of people receiving food assistance, changes in agricultural yields, and improvements in community health and nutrition.",
+                  "Track the number of individuals reached, vaccinations administered, and improvements in maternal and child health indicators.",
               },
               {
                 icon: FileText,
                 title: "Surveys and Feedback",
                 description:
-                  "Conduct surveys to assess the impact of food distribution programs and agricultural training. Use the feedback to make adjustments and improve the program.",
+                  "Collect feedback from community members and healthcare providers to assess program effectiveness.",
               },
               {
                 icon: LineChart,
                 title: "Annual Review",
                 description:
-                  "An annual review will assess the effectiveness of the program, identify any challenges, and ensure that objectives are being met.",
+                  "Conduct an annual review to measure the project's impact and adjust strategies for improvement.",
               },
             ].map((item, index) => (
               <motion.div
@@ -559,7 +525,6 @@ export default function AnnaSamruddhiPage() {
         </div>
       </section>
 
-      
       {/* Expected Outcomes */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -604,14 +569,14 @@ export default function AnnaSamruddhiPage() {
           >
             <h2 className="text-3xl font-bold text-green-800 mb-6">Support Our Mission</h2>
             <p className="text-gray-600 text-lg mb-8">
-              Join us in our mission to eradicate hunger and ensure food security for all. Your support can make a
-              significant difference in the lives of vulnerable communities.
+              Join us in our mission to improve healthcare access and ensure well-being for all. Your support can make a
+              significant difference in the lives of underserved communities.
             </p>
             <div className="flex justify-center gap-4">
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
                 Donate Now
               </Button>
-              <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-green-50">
+              <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-blue-50">
                 Volunteer With Us
               </Button>
             </div>
@@ -621,4 +586,3 @@ export default function AnnaSamruddhiPage() {
     </main>
   )
 }
-

@@ -1,3 +1,5 @@
+// app/page.tsx
+
 import AboutUs from "../components/AboutUs";
 import HeroSection from "../components/HeroSection";
 import OurPrograms from "../components/OurPrograms";
@@ -7,6 +9,13 @@ import StorySection from "../components/StorySection";
 import HistoryTimeline from "../components/HistoryTimeline";
 import CtaSection from "../components/CtaSection";
 import WhyCare from "../components/WhyCare";
+
+
+// import About from "@/components/About";
+// import Vision from "@/components/Vision";
+// import Programs from "@/components/Programs";
+// import Journey from "@/components/Journey";
+// import CTA from "@/components/CTA";
 
 export default function Home() {
   return (

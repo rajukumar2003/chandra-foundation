@@ -1,3 +1,5 @@
+// app/page.tsx
+
 import AboutUs from "../components/AboutUs";
 import HeroSection from "../components/HeroSection";
 import OurPrograms from "../components/OurPrograms";

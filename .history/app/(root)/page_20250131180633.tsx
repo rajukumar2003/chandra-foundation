@@ -1,3 +1,5 @@
+// app/page.tsx
+
 import AboutUs from "../components/AboutUs";
 import HeroSection from "../components/HeroSection";
 import OurPrograms from "../components/OurPrograms";
@@ -7,6 +9,7 @@ import StorySection from "../components/StorySection";
 import HistoryTimeline from "../components/HistoryTimeline";
 import CtaSection from "../components/CtaSection";
 import WhyCare from "../components/WhyCare";
+
 
 export default function Home() {
   return (

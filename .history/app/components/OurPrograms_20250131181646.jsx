@@ -58,7 +58,7 @@ export default function OurPrograms() {
             <p className="text-gray-600 max-w-xs mx-auto">
               Promoting healthy lives with essential medical support.
             </p>
-            <Link href="/services/ayushKalyan" className="mt-4">
+            <Link href="/projects/ayushkalyan" className="mt-4">
               <Button
                 variant="outline"
                 className="border-green-600 text-green-600 hover:bg-green-50"
@@ -92,7 +92,7 @@ export default function OurPrograms() {
             <p className="text-gray-600 max-w-xs mx-auto">
               Ensuring no child goes to bed hungry without food.
             </p>
-            <Link href="/services/annaSamruddhi" className="mt-4">
+            <Link href="/services/annasamruddhi" className="mt-4">
               <Button
                 variant="outline"
                 className="border-green-600 text-green-600 hover:bg-green-50"

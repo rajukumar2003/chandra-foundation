@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "next/link"
 
 export default function OurPrograms() {
   return (
@@ -53,19 +53,11 @@ export default function OurPrograms() {
               </div>
             </div>
             <h3 className="text-xl font-semibold text-green-700 mb-3">
-              AyushKalyan
+            AyushKalyan
             </h3>
             <p className="text-gray-600 max-w-xs mx-auto">
               Promoting healthy lives with essential medical support.
             </p>
-            <Link href="/services/ayushKalyan" className="mt-4">
-              <Button
-                variant="outline"
-                className="border-green-600 text-green-600 hover:bg-green-50"
-              >
-                Learn More
-              </Button>
-            </Link>
           </motion.div>
 
           {/* AnnaSamruddhi (Food) */}
@@ -86,20 +78,10 @@ export default function OurPrograms() {
                 />
               </div>
             </div>
-            <h3 className="text-xl font-semibold text-green-700 mb-3">
-              AnnaSamruddhi
-            </h3>
+            <h3 className="text-xl font-semibold text-green-700 mb-3">AnnaSamruddhi</h3>
             <p className="text-gray-600 max-w-xs mx-auto">
               Ensuring no child goes to bed hungry without food.
             </p>
-            <Link href="/services/annaSamruddhi" className="mt-4">
-              <Button
-                variant="outline"
-                className="border-green-600 text-green-600 hover:bg-green-50"
-              >
-                Learn More
-              </Button>
-            </Link>
           </motion.div>
 
           {/* VidyaUday (Education) */}
@@ -121,19 +103,11 @@ export default function OurPrograms() {
               </div>
             </div>
             <h3 className="text-xl font-semibold text-green-700 mb-3">
-              VidyaUday
+            VidyaUday
             </h3>
             <p className="text-gray-600 max-w-xs mx-auto">
               Providing knowledge and opportunities to children.
             </p>
-            <Link href="/services/vidyaUday" className="mt-4">
-              <Button
-                variant="outline"
-                className="border-green-600 text-green-600 hover:bg-green-50"
-              >
-                Learn More
-              </Button>
-            </Link>
           </motion.div>
 
           {/* KarmaVikas (Employment) */}
@@ -155,19 +129,11 @@ export default function OurPrograms() {
               </div>
             </div>
             <h3 className="text-xl font-semibold text-green-700 mb-3">
-              KarmaVikas
+            KarmaVikas
             </h3>
             <p className="text-gray-600 max-w-xs mx-auto">
               Creating opportunities for sustainable livelihoods.
             </p>
-            <Link href="/services/karmaVikas" className="mt-4">
-              <Button
-                variant="outline"
-                className="border-green-600 text-green-600 hover:bg-green-50"
-              >
-                Learn More
-              </Button>
-            </Link>
           </motion.div>
 
           {/* Additional Program - PrakritiSamvardhan */}
@@ -194,19 +160,11 @@ export default function OurPrograms() {
             <p className="text-gray-600 max-w-sm mx-auto">
               Fostering climate resilience and enviornmental sustainablity .
             </p>
-            <Link href="/services/prakritiSamvardhan" className="mt-4">
-              <Button
-                variant="outline"
-                className="border-green-600 text-green-600 hover:bg-green-50"
-              >
-                Learn More
-              </Button>
-            </Link>
           </motion.div>
         </div>
 
         {/* CTA Button */}
-        {/* <motion.div
+        <motion.div
           className="text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -219,7 +177,7 @@ export default function OurPrograms() {
           >
             Explore Our Work
           </Button>
-        </motion.div> */}
+        </motion.div>
       </div>
     </section>
   );

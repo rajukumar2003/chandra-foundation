@@ -33,7 +33,7 @@ export default function OurPrograms() {
         </div>
 
         {/* Main Programs Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-16 max-w-7xl mx-auto mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16 max-w-7xl mx-auto mb-16">
           {/* AyushKalyan (Health & Care) */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -33,7 +33,7 @@ export default function WhyTrustUs() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl"
+            className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl"
           >
             <div className="relative w-full h-56 sm:h-64 lg:h-72">
               <Image
@@ -61,7 +61,7 @@ export default function WhyTrustUs() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1}}
-            className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl"
+            className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl"
           >
             <div className="relative w-full h-56 sm:h-64 lg:h-72">
               <Image

@@ -29,11 +29,11 @@ export default function WhyTrustUs() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
           {/* Card 1: We Build Smiles */}
           <motion.div
-            initial={{ opacity: 0.5, x: 20 }}
+            initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1 }}
-            className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl"
+            transition={{ duration: 0.6 }}
+            className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl"
           >
             <div className="relative w-full h-56 sm:h-64 lg:h-72">
               <Image
@@ -48,7 +48,7 @@ export default function WhyTrustUs() {
                 We Build Smiles
               </h4>
               <p className="text-gray-600">
-                Through our various initiatives and programs, we&apos;ve brought
+                Through our various initiatives and programs, weve brought
                 smiles to thousands of faces creating a lasting impact in
                 communities.
               </p>
@@ -57,11 +57,11 @@ export default function WhyTrustUs() {
 
           {/* Card 2: We Nurture Growth */}
           <motion.div
-            initial={{ opacity: 0.5, x: 20 }}
+            initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1}}
-            className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl"
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl"
           >
             <div className="relative w-full h-56 sm:h-64 lg:h-72">
               <Image

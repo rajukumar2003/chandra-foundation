@@ -150,7 +150,7 @@ export default function AyushKalyanPage() {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/heathcare.jpg"
+          src="/images/ayushKlyaan23.jpg"
           alt="AyushKalyan - Well-being of Life"
           fill
           className="object-cover"
@@ -418,8 +418,6 @@ export default function AyushKalyanPage() {
         </div>
       </section>
 
-      <ProgramsAndInitiatives programs={programs} />
-
       {/* Timeline */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -681,7 +679,6 @@ export default function AyushKalyanPage() {
           </div>
         </div>
       </section>
-
       {/* Call to Action */}
       <section className="py-16">
         <div className="container mx-auto px-4">

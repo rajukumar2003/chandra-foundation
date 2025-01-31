@@ -119,7 +119,7 @@ const programs = [
     title: "Free Eye Camp",
     description:
       "India has the world's largest blind population, with an estimated 12 million blind people. However, 80% of these can be corrected or prevented, mostly resulting from uncorrected refractive errors such as nearsightedness and farsightedness, and cataracts. Eye screenings and surgery play a vital role in preventing blindness. We, go to villages and provide free eye screenings to people, supported by our partner.",
-    image: "/images/ayushKalyan7.png",
+    image: "/images/ayushkalyan-eye-camp.jpg",
     targetAudience: "Children, women and old people",
     impact: [
       {
@@ -150,7 +150,7 @@ export default function AyushKalyanPage() {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/heathcare.jpg"
+          src="/images/ayushKlyaan23.jpg"
           alt="AyushKalyan - Well-being of Life"
           fill
           className="object-cover"
@@ -418,8 +418,6 @@ export default function AyushKalyanPage() {
         </div>
       </section>
 
-      <ProgramsAndInitiatives programs={programs} />
-
       {/* Timeline */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -681,6 +679,8 @@ export default function AyushKalyanPage() {
           </div>
         </div>
       </section>
+
+      <ProgramsAndInitiatives programs={programs} />
 
       {/* Call to Action */}
       <section className="py-16">

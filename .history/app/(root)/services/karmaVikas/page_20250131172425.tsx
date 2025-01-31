@@ -1,172 +1,156 @@
-"use client";
+"use client"
 
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button"
+import { Card } from "@/components/ui/card"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {
-  HeartPulse,
-  Stethoscope,
-  Syringe,
-  Baby,
-  Brain,
-  ShieldCheck,
-  Users,
-  CheckCircle2,
-  Clock,
   Briefcase,
-  IndianRupee,
+  GraduationCap,
+  Users,
+  Lightbulb,
+  Handshake,
   BarChart,
   FileText,
   LineChart,
-} from "lucide-react";
-import { ProgramsAndInitiatives } from "@/app/components/ProgramsAndInitiatives";
-import Image from "next/image";
+  CheckCircle2,
+  Clock,
+} from "lucide-react"
+import { ProgramsAndInitiatives } from "@/app/components/ProgramsAndInitiatives"
+import Image from "next/image"
 
 const objectives = [
   {
-    title: "Improve Access to Basic Healthcare",
+    title: "Skill Development",
     description:
-      "Provide essential health services, including primary care, maternal and child health services, and vaccinations.",
-    icon: HeartPulse,
+      "Provide skill-building programs in key sectors such as manufacturing, IT, healthcare, and entrepreneurship.",
+    icon: GraduationCap,
   },
   {
-    title: "Preventive Health and Education",
+    title: "Youth Empowerment",
     description:
-      "Raise awareness about hygiene, nutrition, disease prevention, and healthy lifestyle choices.",
-    icon: ShieldCheck,
+      "Equip young people with the skills needed to enter the workforce or become self-employed.",
+    icon: Users,
   },
   {
-    title: "Maternal and Child Health",
+    title: "Women’s Economic Empowerment",
     description:
-      "Reduce maternal and child mortality rates by providing antenatal care, skilled birth attendants, and postnatal care.",
-    icon: Baby,
+      "Create equal opportunities for women to acquire skills for better employment or entrepreneurship.",
+    icon: Lightbulb,
   },
   {
-    title: "Combat Infectious Diseases",
+    title: "Job Placement and Linkages",
     description:
-      "Implement vaccination drives and public health campaigns to prevent and control common infectious diseases.",
-    icon: Syringe,
+      "Establish connections with local businesses and industries to facilitate job placements.",
+    icon: Handshake,
   },
   {
-    title: "Mental Health Awareness",
+    title: "Entrepreneurship Promotion",
     description:
-      "Raise awareness about mental health issues, reduce stigma, and provide support for mental health services.",
-    icon: Brain,
+      "Support aspiring entrepreneurs with training, microfinancing, and mentorship programs.",
+    icon: Briefcase,
   },
   {
-    title: "Strengthen Local Healthcare Infrastructure",
+    title: "Community Engagement",
     description:
-      "Build capacity in local healthcare facilities through training, equipment, and resources.",
-    icon: Stethoscope,
+      "Engage local communities to identify key skills required in their regions and sectors.",
+    icon: Users,
   },
-];
+]
 
 const timeline = [
   {
-    phase: "Phase 1: Planning & Preparation",
+    phase: "Phase 1: Program Design and Preparation",
     duration: "2 months",
     details:
-      "Community assessment, partnership development, and resource mobilization.",
+      "Develop training curriculum, recruit trainers, and set up partnerships with local businesses and organizations.",
   },
   {
-    phase: "Phase 2: Implementation",
-    duration: "12 months",
-    details:
-      "Launch mobile health clinics, health education campaigns, and maternal health programs.",
-  },
-  {
-    phase: "Phase 3: Monitoring & Evaluation",
+    phase: "Phase 2: Skill Training and Workshops",
     duration: "6 months",
-    details:
-      "Assess the effectiveness of health interventions and adjust based on feedback.",
+    details: "Implement skill development programs and entrepreneurship workshops.",
   },
   {
-    phase: "Phase 4: Sustainability",
-    duration: "6 months",
-    details:
-      "Strengthen local healthcare infrastructure and partnerships for long-term impact.",
+    phase: "Phase 3: Job Placement and Mentorship",
+    duration: "3 months",
+    details: "Facilitate job placements, offer career services, and provide mentorship for entrepreneurs.",
   },
-];
+  {
+    phase: "Phase 4: Monitoring and Evaluation",
+    duration: "Ongoing",
+    details: "Track participants’ progress and provide ongoing support, making adjustments as needed.",
+  },
+  {
+    phase: "Phase 5: Community Outreach and Expansion",
+    duration: "Ongoing",
+    details: "Expand the program to more communities based on the success of the initial phases.",
+  },
+]
 
 const outcomes = [
   {
-    metric: "10,000+",
-    label: "Individuals Reached",
-    description:
-      "Medical consultations, vaccinations, and maternal care services provided.",
+    metric: "1,000+",
+    label: "Individuals Trained",
+    description: "In high-demand sectors such as IT, healthcare, and hospitality.",
   },
   {
     metric: "500+",
-    label: "Mental Health Support",
-    description: "Individuals receiving counseling and mental health support.",
+    label: "Job Placements",
+    description: "Individuals successfully placed in full-time employment or internships.",
   },
   {
-    metric: "80%",
-    label: "Health Awareness",
-    description:
-      "Community members reporting increased knowledge about disease prevention.",
+    metric: "100+",
+    label: "New Businesses",
+    description: "Established, creating jobs and contributing to local economic growth.",
   },
   {
-    metric: "50+",
-    label: "Trained Providers",
-    description: "Local healthcare providers trained to deliver quality care.",
+    metric: "300+",
+    label: "Women Empowered",
+    description: "Through skills training and entrepreneurship support.",
   },
-];
+]
 
 const programs = [
-  {
-    title: "Free Eye Camp",
-    description:
-      "India has the world's largest blind population, with an estimated 12 million blind people. However, 80% of these can be corrected or prevented, mostly resulting from uncorrected refractive errors such as nearsightedness and farsightedness, and cataracts. Eye screenings and surgery play a vital role in preventing blindness. We, go to villages and provide free eye screenings to people, supported by our partner.",
-    image: "/images/ayushKalyan7.png",
-    targetAudience: "Children, women and old people",
-    impact: [
-      {
-        title: "Short-term benefits",
-        items: [
-          "Improved vision: Correcting refractive errors, cataracts, and other issues.",
-          "Enhanced quality of life: Restoring independence, mobility, and daily functioning.",
-          "Economic benefits: Reduced medical expenses, increased productivity.",
-          "Increased awareness: Education on eye health, hygiene, and disease prevention.",
-        ],
-      },
-      {
-        title: "Long-term benefits",
-        items: [
-          "Reduced blindness: Early detection and treatment prevent permanent vision loss.",
-          "Improved mental health: Reduced stress, anxiety, and depression related to vision loss.",
-          "Enhanced social interactions: Restored ability to engage with family, community.",
-          "Economic empowerment: Increased employability, income potential.",
-        ],
-      },
-    ],
-  },
-];
+    {
+      title: "Skill Certification",
+      description:
+        "Skill development is crucial in today's rapidly evolving landscape, empowering individuals, organizations, and nations to thrive. By acquiring new skills, individuals enhance their employability, career prospects, and earning potential, while also fostering adaptability and job satisfaction. Organizations benefit from increased productivity, better employee retention, and improved competitiveness, driving innovation and effective leadership. Nations reap economic growth, reduced unemployment, and elevated standards of living, ultimately boosting global competitiveness. Skill development bridges the gap between education and employment, addressing the pressing issue of skill mismatch. Moreover, it enables individuals to navigate emerging industries, technologies, and workforce shifts, ensuring future-readiness. By prioritizing skill development, we unlock human potential, fuel economic progress, and cultivate a resilient, adaptable workforce capable of navigating the complexities of the 21st century.",
+      image: "/images/karmavikas2.jpg",
+      targetAudience: "Unskilled people/labour",
+      impact: [
+        {
+          title: "Impact",
+          items: [
+            "Boosts employability and career prospects.",
+            "Enhances productivity and competitiveness.",
+            "Fosters economic growth and innovation.",
+            "Increases earning potential and job satisfaction.",
+            "Bridges skill gaps and addresses unemployment.",
+            "Prepares workforce for emerging industries and technologies.",
+            "Elevates standard of living and global competitiveness",
+          ],
+        },
+      ],
+    },
+  ]
 
-export default function AyushKalyanPage() {
+export default function KarmaVikasPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-green-50/50 to-white">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/heathcare.jpg"
-          alt="AyushKalyan - Well-being of Life"
+          src="/images/karmaVikas1.png"
+          alt="KarmaVikas - Development of Work"
           fill
           className="object-cover"
           priority
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              AyushKalyan
-            </h1>
-            <p className="text-xl md:text-2xl font-light">Well-being of Life</p>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">KarmaVikas</h1>
+            <p className="text-xl md:text-2xl font-light">Development of Work</p>
           </motion.div>
         </div>
       </section>
@@ -180,18 +164,9 @@ export default function AyushKalyanPage() {
           transition={{ duration: 0.6 }}
           className="max-w-5xl mx-auto text-center"
         >
-          <h2 className="text-3xl font-bold text-green-800 mb-6">
-            Project Summary
-          </h2>
+          <h2 className="text-3xl font-bold text-green-800 mb-6">Project Summary</h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            The AyushKalyan project aims to address healthcare gaps in
-            underserved and marginalized communities. This initiative provides
-            access to basic healthcare services, improves health awareness, and
-            empowers individuals to take charge of their health through
-            education, preventive care, and treatment programs. By focusing on
-            maternal and child health, combating infectious diseases, and
-            promoting mental health, we strive to create a healthier, more
-            equitable future for all.
+            The KarmaVikas project is designed to address unemployment and underemployment in underserved communities by providing targeted skill development programs. This initiative aims to equip individuals with market-relevant skills, enhance their employability, and connect them with sustainable job opportunities. By empowering youth, women, and marginalized groups, we strive to build a better future through enhanced skills and employment prospects.
           </p>
         </motion.div>
       </section>
@@ -206,9 +181,7 @@ export default function AyushKalyanPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-green-800 mb-6">
-              Project Objectives
-            </h2>
+            <h2 className="text-3xl font-bold text-green-800 mb-6">Project Objectives</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -222,9 +195,7 @@ export default function AyushKalyanPage() {
                 className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
               >
                 <objective.icon className="w-12 h-12 text-green-600 mb-4" />
-                <h3 className="text-xl font-semibold text-green-800 mb-2">
-                  {objective.title}
-                </h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-2">{objective.title}</h3>
                 <p className="text-gray-600">{objective.description}</p>
               </motion.div>
             ))}
@@ -242,36 +213,34 @@ export default function AyushKalyanPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-green-800 mb-6">
-              Target Audience
-            </h2>
+            <h2 className="text-3xl font-bold text-green-800 mb-6">Target Audience</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {[
               {
                 icon: Users,
-                title: "Marginalized Communities",
+                title: "Youth",
                 description:
-                  "Low-income populations in rural and underserved urban areas.",
+                  "Unemployed or underemployed young individuals, including school dropouts and those lacking formal education.",
               },
               {
-                icon: Baby,
-                title: "Women and Children",
+                icon: Lightbulb,
+                title: "Women",
                 description:
-                  "Individuals in need of maternal and child health services.",
+                  "Marginalized women seeking financial independence through employment or entrepreneurship.",
               },
               {
-                icon: HeartPulse,
-                title: "Elderly Individuals",
+                icon: Briefcase,
+                title: "Unemployed Adults",
                 description:
-                  "Older adults requiring specialized care and preventive services.",
+                  "Individuals in rural or low-income areas needing retraining or upskilling for better employment.",
               },
               {
-                icon: Brain,
-                title: "Youth and Adolescents",
+                icon: Handshake,
+                title: "SMEs and Entrepreneurs",
                 description:
-                  "Young people in need of mental health education and disease prevention awareness.",
+                  "Small businesses and aspiring entrepreneurs seeking skilled labor or support for start-ups.",
               },
             ].map((item, index) => (
               <motion.div
@@ -283,9 +252,7 @@ export default function AyushKalyanPage() {
                 className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
               >
                 <item.icon className="w-12 h-12 text-green-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-green-800 mb-2 text-center">
-                  {item.title}
-                </h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-2 text-center">{item.title}</h3>
                 <p className="text-gray-600 text-center">{item.description}</p>
               </motion.div>
             ))}
@@ -303,111 +270,84 @@ export default function AyushKalyanPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-green-800 mb-6">
-              Project Activities
-            </h2>
+            <h2 className="text-3xl font-bold text-green-800 mb-6">Project Activities</h2>
           </motion.div>
 
-          <Tabs defaultValue="clinics" className="max-w-4xl mx-auto">
+          <Tabs defaultValue="training" className="max-w-4xl mx-auto">
             <TabsList className="grid w-full grid-cols-3">
-              <TabsTrigger value="clinics">Mobile Clinics</TabsTrigger>
-              <TabsTrigger value="education">Health Education</TabsTrigger>
-              <TabsTrigger value="mental-health">Mental Health</TabsTrigger>
+              <TabsTrigger value="training">Skill Training</TabsTrigger>
+              <TabsTrigger value="placement">Job Placement</TabsTrigger>
+              <TabsTrigger value="entrepreneurship">Entrepreneurship</TabsTrigger>
             </TabsList>
-            <TabsContent value="clinics" className="mt-6">
+            <TabsContent value="training" className="mt-6">
               <Card className="p-6">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">
-                  Mobile Health Clinics
-                </h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-4">Skill Development Training Programs</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">
-                        Primary Care Services
-                      </p>
+                      <p className="font-medium text-gray-800">Technical and Soft Skills</p>
                       <p className="text-gray-600">
-                        Provide essential health services, including
-                        consultations, vaccinations, and maternal health
-                        checkups.
+                        Provide training in IT, healthcare, construction, hospitality, and entrepreneurship, including communication and leadership skills.
                       </p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">
-                        Disease Screenings
-                      </p>
+                      <p className="font-medium text-gray-800">Collaboration with Experts</p>
                       <p className="text-gray-600">
-                        Conduct screenings for hypertension, diabetes, and
-                        tuberculosis in underserved areas.
+                        Partner with local training institutions and industry experts to deliver high-quality courses.
                       </p>
                     </div>
                   </li>
                 </ul>
               </Card>
             </TabsContent>
-            <TabsContent value="education" className="mt-6">
+            <TabsContent value="placement" className="mt-6">
               <Card className="p-6">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">
-                  Health Education Campaigns
-                </h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-4">Job Placement Services</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">
-                        Workshops and Seminars
-                      </p>
+                      <p className="font-medium text-gray-800">Partnerships with Employers</p>
                       <p className="text-gray-600">
-                        Educate communities on hygiene, nutrition, and disease
-                        prevention through interactive sessions.
+                        Establish connections with local businesses and industries to secure job placements.
                       </p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">
-                        Educational Materials
-                      </p>
+                      <p className="font-medium text-gray-800">Job Fairs and Drives</p>
                       <p className="text-gray-600">
-                        Distribute pamphlets and posters in local languages to
-                        promote healthy living.
+                        Organize career fairs and job placement drives to connect employers and job seekers.
                       </p>
                     </div>
                   </li>
                 </ul>
               </Card>
             </TabsContent>
-            <TabsContent value="mental-health" className="mt-6">
+            <TabsContent value="entrepreneurship" className="mt-6">
               <Card className="p-6">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">
-                  Mental Health Programs
-                </h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-4">Entrepreneurship Support</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">
-                        Counseling Services
-                      </p>
+                      <p className="font-medium text-gray-800">Business Development Training</p>
                       <p className="text-gray-600">
-                        Provide mental health support through helplines and
-                        community-based counseling.
+                        Offer training programs for aspiring entrepreneurs, including business planning and management.
                       </p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">
-                        Awareness Workshops
-                      </p>
+                      <p className="font-medium text-gray-800">Microfinance and Mentorship</p>
                       <p className="text-gray-600">
-                        Conduct workshops on stress management, coping
-                        mechanisms, and reducing stigma around mental health.
+                        Provide access to microfinancing and mentorship to support new businesses.
                       </p>
                     </div>
                   </li>
@@ -417,8 +357,6 @@ export default function AyushKalyanPage() {
           </Tabs>
         </div>
       </section>
-
-      <ProgramsAndInitiatives programs={programs} />
 
       {/* Timeline */}
       <section className="py-16">
@@ -430,9 +368,7 @@ export default function AyushKalyanPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-green-800 mb-6">
-              Project Timeline
-            </h2>
+            <h2 className="text-3xl font-bold text-green-800 mb-6">Project Timeline</h2>
           </motion.div>
 
           <div className="max-w-4xl mx-auto">
@@ -447,14 +383,10 @@ export default function AyushKalyanPage() {
               >
                 <div className="w-32 shrink-0 flex flex-col justify-center items-center">
                   <Clock className="w-8 h-8 text-green-600 mb-2" />
-                  <span className="text-sm font-medium text-green-700 text-center">
-                    {phase.duration}
-                  </span>
+                  <span className="text-sm font-medium text-green-700 text-center">{phase.duration}</span>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-lg flex-1">
-                  <h3 className="text-xl font-semibold text-green-800 mb-2">
-                    {phase.phase}
-                  </h3>
+                  <h3 className="text-xl font-semibold text-green-800 mb-2">{phase.phase}</h3>
                   <p className="text-gray-600">{phase.details}</p>
                 </div>
               </motion.div>
@@ -473,9 +405,7 @@ export default function AyushKalyanPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-green-800 mb-6">
-              Budget Estimate
-            </h2>
+            <h2 className="text-3xl font-bold text-green-800 mb-6">Budget Estimate</h2>
           </motion.div>
 
           <div className="max-w-5xl mx-auto">
@@ -483,25 +413,19 @@ export default function AyushKalyanPage() {
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-gray-200">
-                    <th className="text-left py-2 font-semibold text-green-800">
-                      Item
-                    </th>
-                    <th className="text-right py-2 font-semibold text-green-800">
-                      Cost (USD)
-                    </th>
+                    <th className="text-left py-2 font-semibold text-green-800">Item</th>
+                    <th className="text-right py-2 font-semibold text-green-800">Cost (INR)</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    "Personnel (Doctors, Nurses, Trainers)",
-                    "Mobile Health Units",
-                    "Healthcare Supplies and Medications",
-                    "Health Education Materials",
-                    "Vaccination Campaigns",
-                    "Mental Health Programs",
-                    "Capacity Building for Providers",
-                    "Monitoring and Evaluation",
-                    "Community Outreach Activities",
+                    "Skill Development Training Programs",
+                    "Job Placement and Career Services",
+                    "Entrepreneurship Support & Microfinance",
+                    "Women&apos;s Empowerment Programs",
+                    "Monitoring, Evaluation, and Reporting",
+                    "Administrative Costs and Staff",
+                    "Community Outreach and Engagement",
                     "Contingency Fund",
                   ].map((item, index) => (
                     <tr key={index} className="border-b border-gray-100">
@@ -517,8 +441,7 @@ export default function AyushKalyanPage() {
               </table>
             </Card>
             <p className="text-sm text-gray-500 mt-4">
-              Note: This budget is an estimate and may vary based on local
-              conditions and resources.
+              Note: This budget is an estimate and may vary based on local conditions and resources.
             </p>
           </div>
         </div>
@@ -534,36 +457,34 @@ export default function AyushKalyanPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-green-800 mb-6">
-              Project Sustainability
-            </h2>
+            <h2 className="text-3xl font-bold text-green-800 mb-6">Project Sustainability</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {[
               {
-                icon: Users,
-                title: "Community Engagement",
+                icon: Handshake,
+                title: "Partnerships with Local Businesses",
                 description:
-                  "Involve community members in health education and decision-making to foster ownership and long-term commitment.",
+                  "Collaboration with local enterprises ensures the program&apos;s relevance to the job market and long-term viability.",
               },
               {
                 icon: Briefcase,
-                title: "Capacity Building",
+                title: "Self-sustaining Entrepreneurship",
                 description:
-                  "Train local healthcare providers to ensure continued access to quality care after the project ends.",
+                  "Empowering individuals with entrepreneurship skills and microfinance reduces long-term dependency on external support.",
               },
               {
-                icon: IndianRupee,
-                title: "Partnerships with Local Authorities",
+                icon: GraduationCap,
+                title: "Ongoing Training and Alumni Support",
                 description:
-                  "Collaborate with local health authorities to integrate the project into existing healthcare systems.",
+                  "Graduates receive continued guidance, mentoring, and resources to ensure long-term success.",
               },
               {
-                icon: HeartPulse,
-                title: "Income-Generating Activities",
+                icon: Users,
+                title: "Public and Private Sector Involvement",
                 description:
-                  "Partner with local businesses to fund health education materials and vaccination programs.",
+                  "Involving local governments and private companies secures long-term funding and resources.",
               },
             ].map((item, index) => (
               <motion.div
@@ -575,9 +496,7 @@ export default function AyushKalyanPage() {
                 className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-center items-center"
               >
                 <item.icon className="w-12 h-12 text-green-600 mb-4 text-center" />
-                <h3 className="text-xl font-semibold text-green-800 mb-2">
-                  {item.title}
-                </h3>
+                <h3 className="text-xl font-semibold text-green-800 mb-2">{item.title}</h3>
                 <p className="text-gray-600 text-center">{item.description}</p>
               </motion.div>
             ))}
@@ -595,30 +514,34 @@ export default function AyushKalyanPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-green-800 mb-6">
-              Monitoring and Evaluation
-            </h2>
+            <h2 className="text-3xl font-bold text-green-800 mb-6">Monitoring and Evaluation</h2>
           </motion.div>
 
           <div className="max-w-4xl mx-auto">
             {[
               {
                 icon: BarChart,
-                title: "Health Metrics",
+                title: "Tracking Employment Outcomes",
                 description:
-                  "Track the number of individuals reached, vaccinations administered, and improvements in maternal and child health indicators.",
-              },
-              {
-                icon: FileText,
-                title: "Surveys and Feedback",
-                description:
-                  "Collect feedback from community members and healthcare providers to assess program effectiveness.",
+                  "Monitor the number of individuals placed in jobs, their retention rates, and the sectors they are employed in.",
               },
               {
                 icon: LineChart,
-                title: "Annual Review",
+                title: "Entrepreneurship Success Rates",
                 description:
-                  "Conduct an annual review to measure the project's impact and adjust strategies for improvement.",
+                  "Track the number of businesses started, their sustainability, and their impact on the local economy.",
+              },
+              {
+                icon: FileText,
+                title: "Feedback from Beneficiaries",
+                description:
+                  "Conduct surveys and interviews with participants to assess the quality and relevance of training programs.",
+              },
+              {
+                icon: CheckCircle2,
+                title: "Impact Assessment",
+                description:
+                  "Regularly assess the overall impact of the program on poverty reduction, economic independence, and community development.",
               },
             ].map((item, index) => (
               <motion.div
@@ -633,9 +556,7 @@ export default function AyushKalyanPage() {
                   <item.icon className="w-12 h-12 text-green-600" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-green-800 mb-2">
-                    {item.title}
-                  </h3>
+                  <h3 className="text-xl font-semibold text-green-800 mb-2">{item.title}</h3>
                   <p className="text-gray-600">{item.description}</p>
                 </div>
               </motion.div>
@@ -654,9 +575,7 @@ export default function AyushKalyanPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-green-800 mb-6">
-              Expected Outcomes
-            </h2>
+            <h2 className="text-3xl font-bold text-green-800 mb-6">Expected Outcomes</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
@@ -669,18 +588,16 @@ export default function AyushKalyanPage() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="bg-white p-6 rounded-lg shadow-lg text-center"
               >
-                <div className="text-3xl font-bold text-green-700 mb-2">
-                  {outcome.metric}
-                </div>
-                <h3 className="text-lg font-semibold text-green-600 mb-2">
-                  {outcome.label}
-                </h3>
+                <div className="text-3xl font-bold text-green-700 mb-2">{outcome.metric}</div>
+                <h3 className="text-lg font-semibold text-green-600 mb-2">{outcome.label}</h3>
                 <p className="text-gray-600">{outcome.description}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
+
+      <ProgramsAndInitiatives programs={programs} />
 
       {/* Call to Action */}
       <section className="py-16">
@@ -692,26 +609,15 @@ export default function AyushKalyanPage() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-3xl font-bold text-green-800 mb-6">
-              Support Our Mission
-            </h2>
+            <h2 className="text-3xl font-bold text-green-800 mb-6">Support Our Mission</h2>
             <p className="text-gray-600 text-lg mb-8">
-              Join us in our mission to improve healthcare access and ensure
-              well-being for all. Your support can make a significant difference
-              in the lives of underserved communities.
+              Join us in our mission to empower individuals through skill development and employment opportunities. Your support can make a significant difference in creating sustainable livelihoods for underserved communities.
             </p>
             <div className="flex justify-center gap-4">
-              <Button
-                size="lg"
-                className="bg-green-600 hover:bg-green-700 text-white"
-              >
+              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
                 Donate Now
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-green-600 text-green-600 hover:bg-blue-50"
-              >
+              <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-blue-50">
                 Volunteer With Us
               </Button>
             </div>
@@ -719,5 +625,5 @@ export default function AyushKalyanPage() {
         </div>
       </section>
     </main>
-  );
+  )
 }

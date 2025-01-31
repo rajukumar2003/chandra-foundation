@@ -5,13 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
-  HeartPulse,
-  Stethoscope,
-  Syringe,
-  Baby,
-  Brain,
-  ShieldCheck,
+  Sprout,
+  TreePine,
+  Leaf,
+  CloudRain,
   Users,
+  GraduationCap,
   CheckCircle2,
   Clock,
   Briefcase,
@@ -25,133 +24,141 @@ import Image from "next/image";
 
 const objectives = [
   {
-    title: "Improve Access to Basic Healthcare",
+    title: "Promote Sustainable Farming",
     description:
-      "Provide essential health services, including primary care, maternal and child health services, and vaccinations.",
-    icon: HeartPulse,
+      "Encourage local farmers to adopt eco-friendly farming practices such as agroforestry, organic farming, and crop rotation.",
+    icon: Sprout,
   },
   {
-    title: "Preventive Health and Education",
+    title: "Tree Plantation for Ecosystem Restoration",
     description:
-      "Raise awareness about hygiene, nutrition, disease prevention, and healthy lifestyle choices.",
-    icon: ShieldCheck,
+      "Plant native trees to restore degraded land, improve local ecosystems, and enhance biodiversity.",
+    icon: TreePine,
   },
   {
-    title: "Maternal and Child Health",
+    title: "Improve Livelihoods",
     description:
-      "Reduce maternal and child mortality rates by providing antenatal care, skilled birth attendants, and postnatal care.",
-    icon: Baby,
+      "Enhance farmers' income by diversifying crops with fruit trees, timber trees, and other tree-based products.",
+    icon: Leaf,
   },
   {
-    title: "Combat Infectious Diseases",
+    title: "Climate Change Mitigation",
     description:
-      "Implement vaccination drives and public health campaigns to prevent and control common infectious diseases.",
-    icon: Syringe,
+      "Contribute to climate change mitigation by sequestering carbon through tree planting and sustainable farming techniques.",
+    icon: CloudRain,
   },
   {
-    title: "Mental Health Awareness",
+    title: "Soil and Water Conservation",
     description:
-      "Raise awareness about mental health issues, reduce stigma, and provide support for mental health services.",
-    icon: Brain,
+      "Implement practices to conserve soil and water, reduce erosion, and improve the quality of farmland.",
+    icon: CloudRain,
   },
   {
-    title: "Strengthen Local Healthcare Infrastructure",
+    title: "Community Engagement and Education",
     description:
-      "Build capacity in local healthcare facilities through training, equipment, and resources.",
-    icon: Stethoscope,
+      "Engage local communities in the project and raise awareness about the benefits of combining agriculture with nature conservation.",
+    icon: Users,
   },
 ];
 
 const timeline = [
   {
-    phase: "Phase 1: Planning & Preparation",
-    duration: "2 months",
+    phase: "Phase 1: Community Engagement and Planning",
+    duration: "1-2 months",
     details:
-      "Community assessment, partnership development, and resource mobilization.",
+      "Engage local communities, identify suitable lands for agroforestry, and plan for tree planting activities.",
   },
   {
-    phase: "Phase 2: Implementation",
+    phase: "Phase 2: Farmer Training and Awareness",
+    duration: "3 months",
+    details:
+      "Conduct training programs on agroforestry, sustainable farming, and tree plantation.",
+  },
+  {
+    phase: "Phase 3: Tree Plantation and Agroforestry Setup",
+    duration: "6 months",
+    details:
+      "Begin tree plantation and implement agroforestry systems on selected farmlands.",
+  },
+  {
+    phase: "Phase 4: Maintenance and Monitoring",
+    duration: "Ongoing (12 months)",
+    details:
+      "Continue maintenance of tree plantations, assess the growth of trees and crops, and provide support to farmers.",
+  },
+  {
+    phase: "Phase 5: Community Education and Expansion",
     duration: "12 months",
     details:
-      "Launch mobile health clinics, health education campaigns, and maternal health programs.",
-  },
-  {
-    phase: "Phase 3: Monitoring & Evaluation",
-    duration: "6 months",
-    details:
-      "Assess the effectiveness of health interventions and adjust based on feedback.",
-  },
-  {
-    phase: "Phase 4: Sustainability",
-    duration: "6 months",
-    details:
-      "Strengthen local healthcare infrastructure and partnerships for long-term impact.",
+      "Expand awareness programs, conduct more tree-planting drives, and involve additional farmers in the project.",
   },
 ];
 
 const outcomes = [
   {
-    metric: "10,000+",
-    label: "Individuals Reached",
+    metric: "200+",
+    label: "Farmers Adopting Agroforestry",
     description:
-      "Medical consultations, vaccinations, and maternal care services provided.",
+      "Improving crop yields and soil fertility through sustainable practices.",
   },
   {
-    metric: "500+",
-    label: "Mental Health Support",
-    description: "Individuals receiving counseling and mental health support.",
+    metric: "50,000",
+    label: "Trees Planted",
+    description: "Leading to restored habitats and enhanced biodiversity.",
   },
   {
-    metric: "80%",
-    label: "Health Awareness",
+    metric: "5,000+",
+    label: "Community Members Engaged",
     description:
-      "Community members reporting increased knowledge about disease prevention.",
+      "Involved in environmental activities and sustainable farming initiatives.",
   },
   {
-    metric: "50+",
-    label: "Trained Providers",
-    description: "Local healthcare providers trained to deliver quality care.",
+    metric: "Significant",
+    label: "Carbon Sequestration",
+    description: "Through tree planting and sustainable farming practices.",
   },
 ];
 
 const programs = [
   {
-    title: "Free Eye Camp",
+    title: "Tree Plantation",
     description:
-      "India has the world's largest blind population, with an estimated 12 million blind people. However, 80% of these can be corrected or prevented, mostly resulting from uncorrected refractive errors such as nearsightedness and farsightedness, and cataracts. Eye screenings and surgery play a vital role in preventing blindness. We, go to villages and provide free eye screenings to people, supported by our partner.",
-    image: "/images/ayushKalyan7.png",
-    targetAudience: "Children, women and old people",
+      "Tree planting is considered one of the most attractive, eco-friendly activities that can help the planet when done properly.Due to the alarmingly increasing global warming and deforestation, there is a need to plant more trees and have a greener environment. That is why our Chandra Foundation keeps planting trees at various places from time to time under Project Prakriti Samvardhan.",
+    image: "/images/prakritisamvardhan-tree-plantation.jpg",
+    targetAudience: "Local communities, schools, and public spaces",
     impact: [
       {
-        title: "Short-term benefits",
+        title: "Environmental Impact",
         items: [
-          "Improved vision: Correcting refractive errors, cataracts, and other issues.",
-          "Enhanced quality of life: Restoring independence, mobility, and daily functioning.",
-          "Economic benefits: Reduced medical expenses, increased productivity.",
-          "Increased awareness: Education on eye health, hygiene, and disease prevention.",
+          "Carbon dioxide absorption and oxygen production",
+          "Air pollution reduction",
+          "Soil conservation and erosion prevention",
+          "Water cycle regulation",
+          "Biodiversity support",
         ],
       },
       {
-        title: "Long-term benefits",
+        title: "Social and Economic Impact",
         items: [
-          "Reduced blindness: Early detection and treatment prevent permanent vision loss.",
-          "Improved mental health: Reduced stress, anxiety, and depression related to vision loss.",
-          "Enhanced social interactions: Restored ability to engage with family, community.",
-          "Economic empowerment: Increased employability, income potential.",
+          "Improved aesthetics and property values",
+          "Energy conservation through shading",
+          "Food source (fruit and nut trees)",
+          "Mental health benefits and stress reduction",
+          "Educational opportunities for environmental awareness",
         ],
       },
     ],
   },
 ];
 
-export default function AyushKalyanPage() {
+export default function PrakritiSamvardhanPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-green-50/50 to-white">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/heathcare.jpg"
-          alt="AyushKalyan - Well-being of Life"
+          src="/images/planting_trees.jpeg"
+          alt="PrakritiSamvardhan - Nature Nurturing"
           fill
           className="object-cover"
           priority
@@ -164,9 +171,9 @@ export default function AyushKalyanPage() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              AyushKalyan
+              PrakritiSamvardhan
             </h1>
-            <p className="text-xl md:text-2xl font-light">Well-being of Life</p>
+            <p className="text-xl md:text-2xl font-light">Nature Nurturing</p>
           </motion.div>
         </div>
       </section>
@@ -184,14 +191,13 @@ export default function AyushKalyanPage() {
             Project Summary
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            The AyushKalyan project aims to address healthcare gaps in
-            underserved and marginalized communities. This initiative provides
-            access to basic healthcare services, improves health awareness, and
-            empowers individuals to take charge of their health through
-            education, preventive care, and treatment programs. By focusing on
-            maternal and child health, combating infectious diseases, and
-            promoting mental health, we strive to create a healthier, more
-            equitable future for all.
+            The PrakritiSamvardhan project is a holistic approach to integrate
+            tree planting with sustainable farming practices to restore
+            ecosystems, improve soil health, combat climate change, and enhance
+            biodiversity. This initiative aims to empower local communities by
+            promoting environmentally friendly agricultural practices, tree
+            plantation, and fostering a deeper connection between farming and
+            nature conservation.
           </p>
         </motion.div>
       </section>
@@ -250,28 +256,28 @@ export default function AyushKalyanPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {[
               {
+                icon: Sprout,
+                title: "Farmers",
+                description:
+                  "Local farmers engaged in traditional farming practices who need support in adopting sustainable techniques.",
+              },
+              {
                 icon: Users,
-                title: "Marginalized Communities",
+                title: "Local Communities",
                 description:
-                  "Low-income populations in rural and underserved urban areas.",
+                  "Communities in rural areas that rely on agriculture for their livelihood and are affected by environmental degradation.",
               },
               {
-                icon: Baby,
-                title: "Women and Children",
+                icon: GraduationCap,
+                title: "Students and Youth Groups",
                 description:
-                  "Individuals in need of maternal and child health services.",
+                  "Educating younger generations about sustainable farming, agroforestry, and tree plantation.",
               },
               {
-                icon: HeartPulse,
-                title: "Elderly Individuals",
+                icon: Briefcase,
+                title: "Environmental Organizations",
                 description:
-                  "Older adults requiring specialized care and preventive services.",
-              },
-              {
-                icon: Brain,
-                title: "Youth and Adolescents",
-                description:
-                  "Young people in need of mental health education and disease prevention awareness.",
+                  "NGOs, environmental groups, and government agencies that can collaborate in fostering nature conservation.",
               },
             ].map((item, index) => (
               <motion.div
@@ -308,28 +314,28 @@ export default function AyushKalyanPage() {
             </h2>
           </motion.div>
 
-          <Tabs defaultValue="clinics" className="max-w-4xl mx-auto">
+          <Tabs defaultValue="training" className="max-w-4xl mx-auto">
             <TabsList className="grid w-full grid-cols-3">
-              <TabsTrigger value="clinics">Mobile Clinics</TabsTrigger>
-              <TabsTrigger value="education">Health Education</TabsTrigger>
-              <TabsTrigger value="mental-health">Mental Health</TabsTrigger>
+              <TabsTrigger value="training">Farmer Training</TabsTrigger>
+              <TabsTrigger value="plantation">Tree Plantation</TabsTrigger>
+              <TabsTrigger value="conservation">Conservation</TabsTrigger>
             </TabsList>
-            <TabsContent value="clinics" className="mt-6">
+            <TabsContent value="training" className="mt-6">
               <Card className="p-6">
                 <h3 className="text-xl font-semibold text-green-800 mb-4">
-                  Mobile Health Clinics
+                  Farmer Training and Capacity Building
                 </h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
                       <p className="font-medium text-gray-800">
-                        Primary Care Services
+                        Workshops and Training Sessions
                       </p>
                       <p className="text-gray-600">
-                        Provide essential health services, including
-                        consultations, vaccinations, and maternal health
-                        checkups.
+                        Organize sessions on agroforestry, sustainable farming
+                        practices, organic farming, crop rotation, and soil
+                        conservation.
                       </p>
                     </div>
                   </li>
@@ -337,32 +343,32 @@ export default function AyushKalyanPage() {
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
                       <p className="font-medium text-gray-800">
-                        Disease Screenings
+                        Resource Provision
                       </p>
                       <p className="text-gray-600">
-                        Conduct screenings for hypertension, diabetes, and
-                        tuberculosis in underserved areas.
+                        Provide farmers with seeds, tools, and knowledge on
+                        implementing agroforestry systems.
                       </p>
                     </div>
                   </li>
                 </ul>
               </Card>
             </TabsContent>
-            <TabsContent value="education" className="mt-6">
+            <TabsContent value="plantation" className="mt-6">
               <Card className="p-6">
                 <h3 className="text-xl font-semibold text-green-800 mb-4">
-                  Health Education Campaigns
+                  Tree Plantation and Ecosystem Restoration
                 </h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
                       <p className="font-medium text-gray-800">
-                        Workshops and Seminars
+                        Land Identification
                       </p>
                       <p className="text-gray-600">
-                        Educate communities on hygiene, nutrition, and disease
-                        prevention through interactive sessions.
+                        Identify degraded or underutilized lands suitable for
+                        tree plantation and agroforestry systems.
                       </p>
                     </div>
                   </li>
@@ -370,32 +376,32 @@ export default function AyushKalyanPage() {
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
                       <p className="font-medium text-gray-800">
-                        Educational Materials
+                        Native Tree Planting
                       </p>
                       <p className="text-gray-600">
-                        Distribute pamphlets and posters in local languages to
-                        promote healthy living.
+                        Collaborate with local farmers and communities to plant
+                        a variety of native and fruit-bearing trees.
                       </p>
                     </div>
                   </li>
                 </ul>
               </Card>
             </TabsContent>
-            <TabsContent value="mental-health" className="mt-6">
+            <TabsContent value="conservation" className="mt-6">
               <Card className="p-6">
                 <h3 className="text-xl font-semibold text-green-800 mb-4">
-                  Mental Health Programs
+                  Soil and Water Conservation
                 </h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
                       <p className="font-medium text-gray-800">
-                        Counseling Services
+                        Soil Conservation Methods
                       </p>
                       <p className="text-gray-600">
-                        Provide mental health support through helplines and
-                        community-based counseling.
+                        Train farmers on soil conservation methods such as
+                        mulching, contour farming, and cover cropping.
                       </p>
                     </div>
                   </li>
@@ -403,11 +409,12 @@ export default function AyushKalyanPage() {
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 mr-3 shrink-0" />
                     <div>
                       <p className="font-medium text-gray-800">
-                        Awareness Workshops
+                        Water-Saving Techniques
                       </p>
                       <p className="text-gray-600">
-                        Conduct workshops on stress management, coping
-                        mechanisms, and reducing stigma around mental health.
+                        Implement water-saving irrigation techniques, including
+                        drip irrigation, rainwater harvesting, and efficient
+                        watering systems.
                       </p>
                     </div>
                   </li>
@@ -417,8 +424,6 @@ export default function AyushKalyanPage() {
           </Tabs>
         </div>
       </section>
-
-      <ProgramsAndInitiatives programs={programs} />
 
       {/* Timeline */}
       <section className="py-16">
@@ -487,21 +492,19 @@ export default function AyushKalyanPage() {
                       Item
                     </th>
                     <th className="text-right py-2 font-semibold text-green-800">
-                      Cost (USD)
+                      Cost (INR)
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    "Personnel (Doctors, Nurses, Trainers)",
-                    "Mobile Health Units",
-                    "Healthcare Supplies and Medications",
-                    "Health Education Materials",
-                    "Vaccination Campaigns",
-                    "Mental Health Programs",
-                    "Capacity Building for Providers",
+                    "Farmer Training and Capacity Building",
+                    "Tree Plantation and Maintenance",
+                    "Agroforestry System Implementation",
+                    "Soil and Water Conservation Programs",
+                    "Environmental Education and Outreach",
                     "Monitoring and Evaluation",
-                    "Community Outreach Activities",
+                    "Staffing and Operational Costs",
                     "Contingency Fund",
                   ].map((item, index) => (
                     <tr key={index} className="border-b border-gray-100">
@@ -543,27 +546,27 @@ export default function AyushKalyanPage() {
             {[
               {
                 icon: Users,
-                title: "Community Engagement",
+                title: "Community Ownership",
                 description:
-                  "Involve community members in health education and decision-making to foster ownership and long-term commitment.",
+                  "Involving local farmers and communities in the planning and implementation stages will ensure long-term ownership and commitment to the project's goals.",
               },
               {
-                icon: Briefcase,
+                icon: GraduationCap,
                 title: "Capacity Building",
                 description:
-                  "Train local healthcare providers to ensure continued access to quality care after the project ends.",
+                  "By training farmers in sustainable farming techniques and agroforestry, we are empowering them with the skills to maintain the project beyond its duration.",
               },
               {
                 icon: IndianRupee,
-                title: "Partnerships with Local Authorities",
+                title: "Economic Incentives",
                 description:
-                  "Collaborate with local health authorities to integrate the project into existing healthcare systems.",
+                  "The introduction of fruit and timber-bearing trees will provide farmers with additional income streams, motivating them to continue practicing agroforestry.",
               },
               {
-                icon: HeartPulse,
-                title: "Income-Generating Activities",
+                icon: LineChart,
+                title: "Ongoing Monitoring",
                 description:
-                  "Partner with local businesses to fund health education materials and vaccination programs.",
+                  "Continuous monitoring of tree plantations, soil health, and water conservation will allow for adaptive management and ensure the project's sustainability.",
               },
             ].map((item, index) => (
               <motion.div
@@ -603,22 +606,28 @@ export default function AyushKalyanPage() {
           <div className="max-w-4xl mx-auto">
             {[
               {
-                icon: BarChart,
-                title: "Health Metrics",
+                icon: TreePine,
+                title: "Tree Plantation Success Rates",
                 description:
-                  "Track the number of individuals reached, vaccinations administered, and improvements in maternal and child health indicators.",
+                  "Regular checks will be conducted to assess the survival and growth of trees and determine the effectiveness of the agroforestry system.",
+              },
+              {
+                icon: CloudRain,
+                title: "Soil and Water Health",
+                description:
+                  "Soil health will be monitored to evaluate the impact of sustainable farming practices and tree planting on soil fertility and water retention.",
               },
               {
                 icon: FileText,
-                title: "Surveys and Feedback",
+                title: "Farmer Feedback",
                 description:
-                  "Collect feedback from community members and healthcare providers to assess program effectiveness.",
+                  "Collect feedback from farmers on the improved crop yields, income generation, and their satisfaction with agroforestry methods.",
               },
               {
-                icon: LineChart,
-                title: "Annual Review",
+                icon: BarChart,
+                title: "Environmental Impact",
                 description:
-                  "Conduct an annual review to measure the project's impact and adjust strategies for improvement.",
+                  "Conduct biodiversity assessments and track the improvement in local ecosystems and wildlife activity due to the project.",
               },
             ].map((item, index) => (
               <motion.div
@@ -682,6 +691,9 @@ export default function AyushKalyanPage() {
         </div>
       </section>
 
+      {/* Programs and Initiatives */}
+      <ProgramsAndInitiatives programs={programs} />
+
       {/* Call to Action */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -696,9 +708,9 @@ export default function AyushKalyanPage() {
               Support Our Mission
             </h2>
             <p className="text-gray-600 text-lg mb-8">
-              Join us in our mission to improve healthcare access and ensure
-              well-being for all. Your support can make a significant difference
-              in the lives of underserved communities.
+              Join us in our mission to promote sustainable farming and restore
+              nature. Your support can make a significant difference in creating
+              a greener, more sustainable future for our planet.
             </p>
             <div className="flex justify-center gap-4">
               <Button
@@ -710,7 +722,7 @@ export default function AyushKalyanPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-green-600 text-green-600 hover:bg-blue-50"
+                className="border-green-600 text-green-600 hover:bg-green-50"
               >
                 Volunteer With Us
               </Button>

@@ -150,7 +150,7 @@ export default function AyushKalyanPage() {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/heathcare.jpg"
+          src="/images/ayushKlyaan23.jpg"
           alt="AyushKalyan - Well-being of Life"
           fill
           className="object-cover"

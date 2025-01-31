@@ -156,7 +156,7 @@ export default function VidyaUdayPage() {
             Project Summary
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            The VidyaUday project aims to address the educational needs of
+            The "VidyaUday project aims to address the educational needs of
             underprivileged children and young adults in marginalized
             communities. This initiative provides quality education, vocational
             training, and life skills development to those who are unable to

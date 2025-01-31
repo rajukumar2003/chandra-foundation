@@ -49,7 +49,7 @@ export default function FoundersMessage() {
                 </div>
               </div>
               <div className="mt-4 text-center">
-                <h3 className="text-xl font-semibold text-green-800">From Founder&apos;s Desk</h3>
+                <h3 className="text-xl font-semibold text-green-800">From Founders Desk</h3>
                 {/* <p className="text-gray-600">Founder</p> */}
               </div>
             </div>

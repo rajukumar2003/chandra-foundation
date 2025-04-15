@@ -60,7 +60,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     const keys = key.split(".")
 
     // Try to get the translation
-    let translation: unknown = translations
+    let translation: any = translations
 
     for (const k of keys) {
       if (typeof translation === "object" && translation !== null && k in translation) {

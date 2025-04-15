@@ -63,21 +63,21 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     let translation: unknown = translations
 
     for (const k of keys) {
-      if (typeof translation === "object" && translation !== null && k in translation) {
-        translation = (translation as Record<string, unknown>)[k]
+      if (translation && translation[k] !== undefined) {
+        translation = translation[k]
       } else {
-        let fallback: unknown = en
+        // If translation not found, try to get it from English as fallback
+        let fallback: any = en
         for (const fk of keys) {
-          if (typeof fallback === "object" && fallback !== null && fk in fallback) {
-            fallback = (fallback as Record<string, unknown>)[fk]
+          if (fallback && fallback[fk] !== undefined) {
+            fallback = fallback[fk]
           } else {
-            return key
+            return key // Return the key itself if not found in fallback
           }
         }
         return typeof fallback === "string" ? fallback : key
       }
     }
-    
 
     return typeof translation === "string" ? translation : key
   }

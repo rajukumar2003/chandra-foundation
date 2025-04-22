@@ -132,7 +132,7 @@ export default function Navbar() {
 
                   <div className="space-y-2 px-4">
                     <Button
-                      className="w-full bg-green-600 hover:bg-green-700 text-white mb-2"
+                      className="w-full bg-green-600 hover:bg-green-700 text-white"
                       onClick={() => setShowQR(true)}
                     >
                       {translations.nav.donate}
@@ -162,11 +162,11 @@ export default function Navbar() {
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
           <div
             ref={modalRef}
-            className="bg-white rounded-xl shadow-lg p-4 max-w-sm w-full text-center"
+            className="bg-white rounded-xl shadow-lg p-6 max-w-sm w-full text-center"
           >
             <h2 className="text-xl font-semibold mb-4 text-green-800">Scan to Donate</h2>
             <Image
-              src="/images/qr.jpg"
+              src="/images/demo-qr.png"
               alt="QR Code"
               width={250}
               height={250}

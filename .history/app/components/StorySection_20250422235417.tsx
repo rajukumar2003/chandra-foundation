@@ -36,7 +36,7 @@ export default function StorySection() {
 
   const stories = [
     {
-      image: "/images/riyaa.jpg",
+      image: "/images",
       title: translations.story[1].title,
       description: translations.story[1].desc,
       category: "Education"
@@ -48,13 +48,13 @@ export default function StorySection() {
       category: "Food Security"
     },
     {
-      image: "/images/ayushKlyaan5.jpg",
+      image: "/images/community_healthcare.jpg",
       title: translations.story[3].title,
       description: translations.story[3].desc,
       category: "Healthcare"
     },
     {
-      image: "/images/community.jpg",
+      image: "/images/fam.jpg",
       title: translations.story[4].title,
       description: translations.story[4].desc,
       category: "Community"

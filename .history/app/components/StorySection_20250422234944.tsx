@@ -42,19 +42,19 @@ export default function StorySection() {
       category: "Education"
     },
     {
-      image: "/images/annaSamruddhi1.jpg",
+      image: "/images/anna",
       title: translations.story[2].title,
       description: translations.story[2].desc,
       category: "Food Security"
     },
     {
-      image: "/images/ayushKlyaan5.jpg",
+      image: "/images/community_healthcare.jpg",
       title: translations.story[3].title,
       description: translations.story[3].desc,
       category: "Healthcare"
     },
     {
-      image: "/images/community.jpg",
+      image: "/images/fam.jpg",
       title: translations.story[4].title,
       description: translations.story[4].desc,
       category: "Community"

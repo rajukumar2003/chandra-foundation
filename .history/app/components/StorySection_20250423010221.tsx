@@ -48,13 +48,14 @@ export default function StorySection() {
       category: "Food Security"
     },
     {
-      image: "/images/ak7.jpg",
+      image: "/images/ayushKlyaan5.jpg",
       title: translations.story[3].title,
       description: translations.story[3].desc,
       category: "Healthcare"
     },
     {
-      image: "/images/community.jpg",
+      image: "/images/community
+      .jpg",
       title: translations.story[4].title,
       description: translations.story[4].desc,
       category: "Community"

@@ -48,7 +48,7 @@ export default function StorySection() {
       category: "Food Security"
     },
     {
-      image: "/images/ak7.jpg",
+      image: "/images/ayushKlyan7.jpg",
       title: translations.story[3].title,
       description: translations.story[3].desc,
       category: "Healthcare"

@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Chandra Foundation",
-  description: "NGO working for uplifment",
+  description: "NGO ",
 };
 
 export default function RootLayout({

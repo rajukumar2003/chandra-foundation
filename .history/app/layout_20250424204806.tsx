@@ -33,7 +33,6 @@ export default function RootLayout({
         <LanguageProvider>
           <Navbar />
           {children}
-          <Analytics />
           <Footer />
         </LanguageProvider>
       </body>

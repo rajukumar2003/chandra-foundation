@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
 import { LanguageProvider } from "./contexts/LanguageContext";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/react"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -33,7 +33,6 @@ export default function RootLayout({
         <LanguageProvider>
           <Navbar />
           {children}
-          <Analytics />
           <Footer />
         </LanguageProvider>
       </body>

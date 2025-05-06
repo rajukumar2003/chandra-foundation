@@ -54,7 +54,7 @@ export default function StorySection() {
       category: "Healthcare"
     },
     {
-      image: "/images/vidyaudaya11.jpg",
+      image: "/images/vidyaudaya.jpg",
       title: translations.story[4].title,
       description: translations.story[4].desc,
       category: "Community"

@@ -37,14 +37,14 @@ export default function Navbar() {
       <nav className="sticky top-0 z-50 bg-white shadow-md">
         <div className="bg-white">
           <div className="container mx-auto px-4">
-            <div className="flex justify-between items-center py-2">
+            <div className="flex justify-between items-center py-4">
               <div className="flex items-center">
                 <Link href="/" className="flex items-center">
                   <Image
-                    src="/images/logoo.png"
+                    src="/images/logo.jpg"
                     alt="Chandra Foundation"
-                    width={90}
-                    height={90}
+                    width={120}
+                    height={120}
                   />
                   <div className="ml-3">
                     <h1 className="text-2xl font-bold text-green-900">

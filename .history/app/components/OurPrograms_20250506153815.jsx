@@ -109,7 +109,7 @@ export default function OurPrograms() {
             <div className="relative w-56 h-56 mb-6 mx-auto">
               <div className="absolute inset-2 rounded-full overflow-hidden">
                 <Image
-                  src="/images/vidyaUday4.jpg"
+                  src="/images/vidyaudaya11.jpg"
                   alt="Education Initiative"
                   fill
                   className="object-cover transform group-hover:scale-110 transition-transform duration-300"
@@ -143,7 +143,7 @@ export default function OurPrograms() {
             <div className="relative w-56 h-56 mb-6 mx-auto">
               <div className="absolute inset-2 rounded-full overflow-hidden">
                 <Image
-                  src="/images/karma1.jpg"
+                  src="/images/employment.jpg"
                   alt="Employment Initiative"
                   fill
                   className="object-cover transform group-hover:scale-110 transition-transform duration-300"

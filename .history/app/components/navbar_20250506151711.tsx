@@ -44,7 +44,7 @@ export default function Navbar() {
                     src="/images/logoo.png"
                     alt="Chandra Foundation"
                     width={90}
-                    height={90}
+                    height={80}
                   />
                   <div className="ml-3">
                     <h1 className="text-2xl font-bold text-green-900">

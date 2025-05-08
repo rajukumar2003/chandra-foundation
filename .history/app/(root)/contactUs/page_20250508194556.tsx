@@ -42,7 +42,7 @@ export default function ContactPage() {
       title: translations.contact.location.title,
       details: translations.contact.location.address,
       action: translations.contact.location.visit,
-      link:'https://www.google.co.in/maps/search/Gram+Ramaipur+khurd,+Post+Benimadhavganj,+Sareni,+Lalganj,+Raebareli%C2%A0229217/@26.1208313,80.8108257,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDUwNS4wIKXMDSoASAFQAw%3D%3D'
+      link:''
     },
     {
       icon: Phone,
@@ -255,7 +255,7 @@ export default function ContactPage() {
             </h2>
             <div className="aspect-video w-full rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.093712353241!2d80.870142!3d26.083061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c6d3c3c3c3c3c%3A0x3c3c3c3c3c3c3c3c!2sRamaipur%20Khurd%2C%20Uttar%20Pradesh%20229216%2C%20India!5e0!3m2!1sen!2sin!4v1737581370533!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1786.5080383119996!2d80.3078191104706!3d26.42295777350184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c47089b7e96f7%3A0xfd4ad40d500c80b!2sChandra%20Foundation!5e0!3m2!1sen!2sin!4v1737581370533!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

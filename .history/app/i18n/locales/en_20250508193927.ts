@@ -338,7 +338,7 @@ const en = {
       },
       
       findUs: "Find Us Here",
-      address: "Address: Gram Ramaipur khurd, Post Benimadhavganj, Sareni, Lalganj, Raebareli 229217",
+      address: "Address: 74 D 6 Vivekpuri, Maya Market, Bara Bypass, Kanpur Nagar, Uttar Pradesh, 208027",
       workingHours: "Working Hours: 24*7"
     }
   }

@@ -170,7 +170,7 @@ const en = {
       getInvolved: "Get Involved",
       contact: "Contact",
       contactUs: "Contact Us",
-      address: "Gram Ramaipur khurd, Post Benimadhavganj, Sareni, Lalganj, Raebareli 229217",
+      address: "74 D 6, Vivekpuri, Maya Market, Bara Bypass, Kanpur Nagar, Uttar Pradesh, 208027Gram Ramaipur khurd, Post Benimadhavganj, Sareni, Lalganj, Raebareli 229217",
       phone: "Phone: (+91) 9044850387",
       email: "Email: cf.helpinghands@yahoo.com",
       stayUpdated: "Stay Updated",
@@ -316,7 +316,7 @@ const en = {
       
       location: {
         title: "Our Location",
-        address: "Gram Ramaipur khurd, Post Benimadhavganj, Sareni, Lalganj, Raebareli 229217",
+        address: "74 D 6 Vivekpuri, Maya Market, Bara Bypass, Kanpur Nagar, Uttar Pradesh, 208027",
         visit: "Visit Us"
       },
       
@@ -338,7 +338,7 @@ const en = {
       },
       
       findUs: "Find Us Here",
-      address: "Address: Gram Ramaipur khurd, Post Benimadhavganj, Sareni, Lalganj, Raebareli 229217",
+      address: "Address: 74 D 6 Vivekpuri, Maya Market, Bara Bypass, Kanpur Nagar, Uttar Pradesh, 208027",
       workingHours: "Working Hours: 24*7"
     }
   }
